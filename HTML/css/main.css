@@ -328,7 +328,7 @@ section {
 ********About CSS*******
 **************************/
 #about-us {
-  background-image: url(../images/about-1.jpg);
+  background-image: url(../images/about.jpg);
   padding: 90px 0;
 }
 
@@ -866,7 +866,7 @@ section {
 }
 
 #contact-us {
-  background-image:url(../images/support-1.jpg);
+  background-image:url(../images/support.jpg);
   padding-bottom: 90px; 
 }
 
