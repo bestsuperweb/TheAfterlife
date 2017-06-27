@@ -22,6 +22,8 @@
   
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
   <link rel="shortcut icon" href="images/favicon.png">
+  <script type="text/javascript" src="js/jquery.js"></script>
+  
 </head><!--/head-->
 
 <body>
@@ -440,6 +442,32 @@
 
   <footer id="footer">
     <div id="google-map" class="wow fadeIn" data-latitude="52.365629" data-longitude="4.871331" data-wow-duration="1000ms" data-wow-delay="400ms"></div>
+    <script type="text/javascript">
+        //Google Map
+        var latitude = $('#google-map').data('latitude')
+        var longitude = $('#google-map').data('longitude')
+        function initialize_map() {
+          var myLatlng = new google.maps.LatLng(latitude,longitude);
+          var mapOptions = {
+            zoom: 14,
+            scrollwheel: false,
+            center: myLatlng
+          };
+          var map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
+          var contentString = '';
+          var infowindow = new google.maps.InfoWindow({
+            content: '<div class="map-content"><ul class="address">' + $('.address').html() + '</ul></div>'
+          });
+          var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map
+          });
+          google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map,marker);
+          });
+        }
+    </script>
+    <script async defer src="http://maps.google.com/maps/api/js?key=AIzaSyBpzIiiLq3H27dzsPhTCPIygSlfJolaj_w&callback=initialize_map" type="text/javascript"></script>
     <div class="footer-top wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
       <div class="container text-center">
         <div class="footer-logo">
@@ -480,9 +508,7 @@
     </div>
   </footer>
 
-  <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyBpzIiiLq3H27dzsPhTCPIygSlfJolaj_w&sensor=true"></script>
   <script type="text/javascript" src="js/jquery.inview.min.js"></script>
   <script type="text/javascript" src="js/wow.min.js"></script>
   <script type="text/javascript" src="js/mousescroll.js"></script>
