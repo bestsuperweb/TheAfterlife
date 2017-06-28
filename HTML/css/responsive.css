@@ -214,6 +214,9 @@
 	.footer-bottom p.pull-right {
 		float: none !important;
 	}
+	.navbar-search input.form-control{
+	  width: 100% !important;
+	}
 }
 
 /* XS Portrait */
