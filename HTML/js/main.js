@@ -17,13 +17,13 @@ jQuery(function($) {
 	});
 	
 	//Scroll Menu
-	$(window).on('scroll', function(){
-		if( $(window).scrollTop()>navHeight ){
-			$('.main-nav').addClass('navbar-fixed-top');
-		} else {
-			$('.main-nav').removeClass('navbar-fixed-top');
-		}
-	});
+	// $(window).on('scroll', function(){
+	// 	if( $(window).scrollTop()>navHeight ){
+	// 		$('.main-nav').addClass('navbar-fixed-top');
+	// 	} else {
+	// 		$('.main-nav').removeClass('navbar-fixed-top');
+	// 	}
+	// });
 	
 	// Navigation Scroll
 	$(window).scroll(function(event) {
