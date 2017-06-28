@@ -1014,3 +1014,72 @@ ul.address {
 /*Presets*/
 
 
+/*--- login */
+.login-body{
+  background: url('../images/login.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.login-form{
+  width: 70%;
+  margin-top: 30%;
+  color: #fff;
+  float: right;
+}
+.login-form .form-control{
+  /*height: 40px;*/
+  color: #fff;
+}
+.login-form .form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(255, 255, 255,.5);
+}
+.login-form .form-control::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(255, 255, 255,.5);
+}
+.login-form .form-control:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(255, 255, 255,.5);
+}
+.login-form .form-control:-moz-placeholder { /* Firefox 18- */
+  ccolor: rgba(255, 255, 255,.5);
+}
+.login-form .input-group{
+  margin-bottom: 20px;
+}
+.login-form .input-group .input-group-addon{
+  background: transparent;
+  border-color: rgba(255,255,255,.1);
+  color: #00cba0;
+}
+.login-button, .signup-button{
+  border-radius: 2px;
+  background: transparent;
+  transition: 1s all ease;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,.3);
+  color: #fff;
+  width: 45%;
+  margin: 5px;
+  padding-bottom: 9px;
+}
+.login-button:hover, .signup-button:hover{
+  background: rgba(255, 255, 255, .3);
+  box-shadow: 0 0 3px #00cba0;
+  border-color: #00cba0;
+  color: #fff;
+}
+.login-form div.text-center{
+  width: 60%;
+  margin: auto;
+}
+.login-form .btn-primary{
+    color: #fff;
+    background-color: #337ab7 !important;
+    border-color: #2e6da4 !important;
+}
+.login-form .btn-primary:hover{
+    background-color: #286090 !important;
+    border-color: #204d74 !important;
+}
+/*login----*/
+
+
