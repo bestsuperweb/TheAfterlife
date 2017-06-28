@@ -7,7 +7,9 @@ jQuery(function($) {
 	});
 
 	//#main-slider
-	var slideHeight = $(window).height();
+	// var slideHeight = $(window).height();
+	var slideHeight = $('.main-nav').height();
+	
 	$('#home-slider .item').css('height',slideHeight);
 
 	$(window).resize(function(){'use strict',
