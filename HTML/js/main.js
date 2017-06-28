@@ -83,8 +83,8 @@ jQuery(function($) {
 
 	$(window).scroll(function(){
 		if($('#testimonial').length){
-			var testop = $('#testimonial').offset().top - 600;
-		    if($(window).scrollTop() >= testop){	        
+			var top = $('#testimonial').offset().top - 600;
+		    if($(this).scrollTop() >= top){	        
 				$('.flexslider1 .flex-control-nav li').each(function(index, element){
 					setTimeout( function(){
 							    $(element).removeClass('slideOutDown').addClass('animated bounceInUp');
