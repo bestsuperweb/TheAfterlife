@@ -7,9 +7,9 @@ jQuery(function($) {
 	});
 
 	//#main-slider
-	// var slideHeight = $(window).height();
-	var slideHeight = $('.main-nav').height();
-	
+	var slideHeight = $(window).height();
+	var navHeight = $('.main-nav').height();
+
 	$('#home-slider .item').css('height',slideHeight);
 
 	$(window).resize(function(){'use strict',
@@ -18,7 +18,7 @@ jQuery(function($) {
 	
 	//Scroll Menu
 	$(window).on('scroll', function(){
-		if( $(window).scrollTop()>slideHeight ){
+		if( $(window).scrollTop()>navHeight ){
 			$('.main-nav').addClass('navbar-fixed-top');
 		} else {
 			$('.main-nav').removeClass('navbar-fixed-top');
