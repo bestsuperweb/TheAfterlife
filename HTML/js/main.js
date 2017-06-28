@@ -73,7 +73,7 @@ jQuery(function($) {
         start: function(slider){
           $('body').removeClass('loading');
         }
-      });
+    });
 
 	$('.flexslider1 .flex-control-nav li').each(function(index, element){
 		setTimeout( function(){
@@ -83,8 +83,8 @@ jQuery(function($) {
 
 	$(window).scroll(function(){
 		if($('#testimonial').length){
-			var top = $('#testimonial').offset().top - 600;
-		    if($(this).scrollTop() >= top){	        
+			var testop = $('#testimonial').offset().top - 600;
+		    if($(window).scrollTop() >= testop){	        
 				$('.flexslider1 .flex-control-nav li').each(function(index, element){
 					setTimeout( function(){
 							    $(element).removeClass('slideOutDown').addClass('animated bounceInUp');
