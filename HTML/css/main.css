@@ -274,7 +274,7 @@ section {
   padding-bottom: 30px;
 }
 
-.navbar-right li.active a {
+.navbar-right li.active a, .navbar-right li a:hover {
   background-color: rgba(0,0,0,.2);
 }
 
@@ -1081,5 +1081,76 @@ ul.address {
     border-color: #204d74 !important;
 }
 /*login----*/
+
+/*-- member side */
+.member-body{
+  background: url('../images/member.jpg');
+  background-size: cover;
+}
+.navbar-search-form{
+  margin-top: 22px;
+}
+.navbar-search-form input[type=text]{
+  height: initial;
+  border: 1px solid rgba(255,255,255,.5);
+  color: #fff;
+}
+.navbar-search-form input[type=text]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(255, 255, 255,.5);
+}
+.navbar-search-form input[type=text]::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(255, 255, 255,.5);
+}
+.navbar-search-form input[type=text]:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(255, 255, 255,.5);
+}
+.navbar-search-form input[type=text]:-moz-placeholder { /* Firefox 18- */
+  ccolor: rgba(255, 255, 255,.5);
+}
+.navbar-search-form .btn{
+  background: transparent;
+  border: 1px solid rgba(255,255,255,.5);
+  color: #fff;
+}
+.bell-nav-link{
+  font-size: 35px !important;
+  padding: 20px 0px !important;
+  transition: 1s all ease;  
+}
+.bell-nav-link:hover{
+  transform: scale(1.2);
+}
+.bell-nav-link .badge{
+  background: #d9534f;
+  position: relative;
+  top: -25px;
+  left: -15px;
+}
+.avatar-nav-link{
+  padding: 10px 0px !important;
+}
+.avatar-nav-link img{
+  width: 55px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.avatar-nav-link{
+  transition: 1s all ease;  
+}
+.avatar-nav-link:hover{
+  transform: scale(1.2);
+}
+.dropdown-menu{
+  background: #00cba0;
+}
+.dropdown-menu li a{
+  padding: 10px;
+  background-color: transparent !important;
+  color: #fff !important;
+}
+.dropdown-menu li:hover{
+  background-color: rgba(0,0,0,.2);
+}
+/* member side ---*/
 
 
