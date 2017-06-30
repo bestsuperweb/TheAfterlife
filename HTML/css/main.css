@@ -274,7 +274,7 @@ section {
   padding-bottom: 30px;
 }
 
-.navbar-right li.active a, .navbar-right li a:hover {
+.navbar-right li.active a, .navbar-right li a:not(.avatar-nav-link):not(.bell-nav-link):hover {
   background-color: rgba(0,0,0,.2);
 }
 
