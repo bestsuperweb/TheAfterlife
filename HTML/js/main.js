@@ -172,6 +172,9 @@ jQuery(function($) {
 	  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
 	});
 
+	$('a[data-toggle="collapse"]').click(function () {
+		$(this).find('span.toggle-icon').toggleClass('glyphicon-chevron-down');
+	});
 	
 	// google.maps.event.addDomListener(window, 'load', initialize_map);
 	
