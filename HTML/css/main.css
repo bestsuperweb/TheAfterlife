@@ -875,12 +875,16 @@ section {
   padding-top: 95px;
 }
 
-.form-control {
+.home-body .form-control {
   background-color: transparent;
   border-color: rgba(255,255,255,.1);
   height: 50px;
   border-radius: 0;
   box-shadow: none;
+}
+.form-control {
+  background-color: transparent;
+  border-color: rgba(255,255,255,.1);
 }
 
 textarea.form-control {
@@ -1152,6 +1156,51 @@ ul.address {
 .dropdown-menu li:hover{
   background-color: rgba(0,0,0,.2);
 }
+
+.nav-tabs { border-bottom: 2px solid #DDD; }
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { border-width: 0; }
+.nav-tabs > li > a { border: none; color: #666; padding-top: 20px; }
+    .nav-tabs > li.active > a, .nav-tabs > li > a:hover { border: none; color: #00cba0 !important; background: transparent; }
+    .nav-tabs > li > a::after { content: ""; background: #00cba0; height: 3px; position: absolute; width: 100%; left: 0px; bottom: -1px; transition: all 250ms ease 0s; transform: scale(0); }
+.nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after { transform: scale(1); }
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {  background: transparent; }
+.tab-nav > li > a::after { background: #21527d none repeat scroll 0% 0%; color: #fff; }
+.tab-pane { padding: 15px 0; }
+.tab-content{padding:20px}
+
+.sub-nav div.progress{
+  float: right;
+  width: 20%;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+.sub-nav .panel{
+  background-color: rgba(255, 255,255, .6);
+}
+.sub-nav .panel-default > .panel-heading{
+  background: #00cba0;
+}
+.sub-nav .panel-default > .panel-heading  .panel-title > a{
+    color: #fff;
+}
+.modal .form-control{
+  box-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+.modal-header{
+  background: #00cba0;
+  border-radius: 6px 6px 0 0;
+}
+.modal-title{
+  color: #fff;
+}
+.modal-footer{
+  background: gainsboro;
+  border-radius: 0 0 6px 6px;
+}
+
+
+
 /* member side ---*/
+
 
 
