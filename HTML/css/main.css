@@ -1197,8 +1197,15 @@ ul.address {
   background: gainsboro;
   border-radius: 0 0 6px 6px;
 }
-
-
+.member-body .tab-content{
+  padding: 20px 0;
+}
+.member-body .progress-bar-success, .member-body .btn-success{
+  background-color: #00cba0;
+}
+.member-body #accordion>.panel{
+  margin-bottom: -3px;
+}
 
 /* member side ---*/
 
