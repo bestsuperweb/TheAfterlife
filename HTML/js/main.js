@@ -173,7 +173,13 @@ jQuery(function($) {
 	});
 
 	$('a[data-toggle="collapse"]').click(function () {
-		$(this).find('span.toggle-icon').toggleClass('glyphicon-chevron-down');
+		if ($(this).find('span.toggle-icon').hasClass('glyphicon-chevron-down')) {
+			$('a[data-toggle="collapse"]').find('span.toggle-icon').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-right');		
+		}else{
+			$('a[data-toggle="collapse"]').find('span.toggle-icon').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-right');
+			$(this).find('span.toggle-icon').removeClass('glyphicon-chevron-right').addClass('glyphicon-chevron-down');		
+		}
+		
 	});
 	
 	// google.maps.event.addDomListener(window, 'load', initialize_map);

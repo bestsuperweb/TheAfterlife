@@ -1183,7 +1183,7 @@ ul.address {
 .sub-nav .panel-default > .panel-heading  .panel-title > a{
     color: #fff;
 }
-.modal .form-control{
+.member-body .form-control{
   box-shadow: 0 1px 2px rgba(0,0,0,.1);
 }
 .modal-header{
@@ -1202,6 +1202,12 @@ ul.address {
 }
 .member-body .progress-bar-success, .member-body .btn-success{
   background-color: #00cba0;
+}
+.btn-success{
+  border-color: #00cba0;
+}
+.btn-success:hover, .btn-success:active{
+  border-color: #00cba0;
 }
 .member-body #accordion>.panel{
   margin-bottom: -3px;
