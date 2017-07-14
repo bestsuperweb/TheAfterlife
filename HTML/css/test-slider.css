@@ -257,7 +257,7 @@ html[xmlns] .flexslider .slides {
 }
 .flexslider1 .flex-control-thumbs .flex-active {
 	opacity: 1;
-	border-color: #00cba0 !important;
+	border-color: #7c77b9 !important;
 	cursor: default;
   position: relative;
 }
@@ -272,8 +272,6 @@ html[xmlns] .flexslider .slides {
   text-align:center;
   padding:0px;
   font-size:30px;
-  color:#434a54;
-  /*font-family: 'Roboto Slab', serif;*/
   background-image: url(../images/test/test-b.png), url(../images/test/test-a.png);
   background-repeat: no-repeat, no-repeat;
   background-position: left 75px top 22px, right 75px top 22px;
@@ -297,7 +295,7 @@ html[xmlns] .flexslider .slides {
 
 .new-slides li span{
     text-align: center;
-    color: #00cba0;
+    color: #145c9e;
     font-size: 17px;
     font-weight: normal;
     width: 100%;
