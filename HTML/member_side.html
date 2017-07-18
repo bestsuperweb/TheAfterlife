@@ -107,7 +107,7 @@
           <ul class="nav nav-tabs wow slideInDown">
             <li role="presentation" class="active"><a href="#mrelaionship" data-toggle="tab">My Relationships</a></li>
             <li role="presentation"><a href="#mbody" data-toggle="tab">My Body</a></li>
-            <li role="presentation"><a href="#mbody" data-toggle="tab">My Possessions</a></li>
+            <li role="presentation"><a href="#mpossession" data-toggle="tab">My Possessions</a></li>
             <li role="presentation"><a href="#mfuneral" data-toggle="tab">My Funeral</a></li>
             <li role="presentation"><a href="#mbody" data-toggle="tab">My Story</a></li>
             <li role="presentation"><a href="#mbody" data-toggle="tab">My Files</a></li>
@@ -415,6 +415,98 @@
               </div>
             </div>
 
+            <div role="tabpanel" class="tab-pane wow bounceInRight" id="mpossession">
+              <div class="panel-group" id="accordion3">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion3" href="#collapse31">
+                        <span class="toggle-icon glyphicon glyphicon-chevron-right"></span>&nbsp;My Possessions
+                      </a>                      
+                    </h4>
+                  </div>
+                  <div id="collapse31" class="panel-collapse collapse">
+                    <div class="panel-body">
+
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Possessions</th>
+                            <th>Person</th>
+                            <th>Notes</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Mike Smith</td>
+                            <td>Golf Clubs</td>
+                            <td>Older Brother, loves golf</td>
+                            <td>
+                              <p data-placement="top" data-toggle="tooltip" title="Edit">
+                                <button class="btn btn-success btn-xs" data-title="Edit" data-toggle="modal" data-target="#editModal2" >
+                                  <span class="glyphicon glyphicon-pencil"></span>
+                                </button>
+                              </p>
+                            </td>
+                            <td>
+                              <p data-placement="top" data-toggle="tooltip" title="Delete">
+                                <button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#deleteModal2" >
+                                  <span class="glyphicon glyphicon-trash"></span>
+                                </button>
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Mike Smith</td>
+                            <td>Golf Clubs</td>
+                            <td>Older Brother, loves golf</td>
+                            <td>
+                              <p data-placement="top" data-toggle="tooltip" title="Edit">
+                                <button class="btn btn-success btn-xs" data-title="Edit" data-toggle="modal" data-target="#editModal2" >
+                                  <span class="glyphicon glyphicon-pencil"></span>
+                                </button>
+                              </p>
+                            </td>
+                            <td>
+                              <p data-placement="top" data-toggle="tooltip" title="Delete">
+                                <button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#deleteModal2" >
+                                  <span class="glyphicon glyphicon-trash"></span>
+                                </button>
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Mike Smith</td>
+                            <td>Golf Clubs</td>
+                            <td>Older Brother, loves golf</td>
+                            <td>
+                              <p data-placement="top" data-toggle="tooltip" title="Edit">
+                                <button class="btn btn-success btn-xs" data-title="Edit" data-toggle="modal" data-target="#editModal2" >
+                                  <span class="glyphicon glyphicon-pencil"></span>
+                                </button>
+                              </p>
+                            </td>
+                            <td>
+                              <p data-placement="top" data-toggle="tooltip" title="Delete">
+                                <button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#deleteModal2" >
+                                  <span class="glyphicon glyphicon-trash"></span>
+                                </button>
+                              </p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <br>
+                      <a type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal2">Add New Possession</a>              
+
+                    </div>
+                  </div>
+                </div>                
+              </div>
+            </div>
+
             <div role="tabpanel" class="tab-pane wow bounceInRight" id="mfuneral">
               <div class="panel-group" id="accordion4">
                 <div class="panel panel-default">
@@ -630,6 +722,96 @@
         <div class="modal-body">
 
          <div class="alert alert-danger"><span class="glyphicon glyphicon-warning-sign"></span> Are you sure you want to delete this Pet?</div>
+
+       </div>
+       <div class="modal-footer ">
+        <button type="button" class="btn btn-success" ><span class="glyphicon glyphicon-ok-sign"></span> Yes</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> No</button>
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+
+  <!-- Modal -->
+  <div id="myModal2" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">New Possession</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label >Possession Name:</label>
+              <input type="text" class="form-control" >
+            </div>
+            <div class="form-group">
+              <label >Person to Receive Possession:</label>
+              <input type="text" class="form-control" >
+            </div>
+            <div class="form-group">
+              <label >Notes:</label>
+              <textarea class="form-control"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-dismiss="modal">Save</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="editModal2" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Edit Possession</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label >Possession Name:</label>
+              <input type="text" class="form-control" value="Mike Smith">
+            </div>
+            <div class="form-group">
+              <label >Person to Receive Possession:</label>
+              <input type="text" class="form-control"  value="Golf Clubs">
+            </div>
+            <div class="form-group">
+              <label >Notes:</label>
+              <textarea class="form-control">Older Brother, loves golf</textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-dismiss="modal">Save</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="modal fade" id="deleteModal2" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title custom_align" id="Heading">Delete this Possession</h4>
+        </div>
+        <div class="modal-body">
+
+         <div class="alert alert-danger"><span class="glyphicon glyphicon-warning-sign"></span> Are you sure you want to delete this Possession?</div>
 
        </div>
        <div class="modal-footer ">
