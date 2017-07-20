@@ -513,12 +513,37 @@
                   <div class="panel-heading">
                     <h4 class="panel-title">
                       <a data-toggle="collapse" data-parent="#accordion4" href="#collapse41">
-                        <span class="toggle-icon glyphicon glyphicon-chevron-right"></span>&nbsp;Burial Service
+                        <span class="toggle-icon glyphicon glyphicon-chevron-right"></span>&nbsp;My Visitation
                       </a>
                     </h4>
                   </div>
                   <div id="collapse41" class="panel-collapse collapse">
-                    <div class="panel-body chat-div" cf-context ...>
+                    <div class="panel-body">
+                      <div class="form-group">
+                        <label>Do I want a visitation?</label>
+                        <div>
+                          <label class="radio-inline"><input type="radio" name="visitradio">Yes</label>
+                          <label class="radio-inline"><input type="radio" name="visitradio">No</label>
+                        </div>                        
+                      </div>
+                      <div class="form-group">
+                        <label>If yes, should my visitation be public?</label>
+                        <select class="form-control">
+                          <option>Yes, public</option>
+                          <option>No, private</option>
+                        </select>                         
+                      </div>
+                      <div class="form-group">
+                        <label>Visitation Location</label>
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <label>Notes</label>
+                        <textarea class="form-control"></textarea>
+                      </div>
+                      <div class="form-group pull-right text-right">
+                        <a href="#" class="btn btn-success">Save</a>
+                      </div>
 
                     </div>
                   </div>
@@ -528,16 +553,324 @@
                   <div class="panel-heading">
                     <h4 class="panel-title">
                       <a data-toggle="collapse" data-parent="#accordion4" href="#collapse42">
-                        <span class="toggle-icon glyphicon glyphicon-chevron-right"></span>&nbsp;Burial Service
+                        <span class="toggle-icon glyphicon glyphicon-chevron-right"></span>&nbsp;My Funeral Service
                       </a>                      
                     </h4>
                   </div>
                   <div id="collapse42" class="panel-collapse collapse">
-                    <div class="panel-body chat-div" >
+                    <div class="panel-body" >
+
+                      <div class="form-group">
+                        <label>Do I want a funeral service?</label>
+                        <div>
+                          <label class="radio-inline"><input type="radio" name="fsradio">Yes</label>
+                          <label class="radio-inline"><input type="radio" name="fsradio">No</label>
+                        </div>                        
+                      </div>
+                      <div class="form-group">
+                        <label>Should my funeral be open to the public?</label>
+                        <select class="form-control">
+                          <option>Yes, public</option>
+                          <option>No, private</option>
+                        </select>                         
+                      </div>
+                      <div class="form-group">
+                        <label>What are my preferred color themes for the funeral design?</label>
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <label>Whta are my preferred flowers for the funeral design?</label>
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <label>Do I have any preferred readings for my funeral program?</label>
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <label>Do I have any preferred music for my funeral program?</label>
+                        <textarea class="form-control"></textarea>                        
+                      </div>
+                      <div class="form-group">
+                        <a type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal3">&plus; Add Music from My Files</a> 
+                      </div>
+                      <div class="form-group">
+                        <label>Do I have any preferred food or drinks to be available during my funeral?</label>
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <label>Are there any other thoughts or notes that I'd like to share?</label>
+                        <textarea class="form-control"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label>Where would I like my Funeral to take place?</label>
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="form-group pull-right text-right">
+                        <a href="#" class="btn btn-success">Save</a>
+                      </div>
 
                     </div>
                   </div>
                 </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion4" href="#collapse43">
+                        <span class="toggle-icon glyphicon glyphicon-chevron-right"></span>&nbsp;My Reception
+                      </a>                      
+                    </h4>
+                  </div>
+                  <div id="collapse43" class="panel-collapse collapse">
+                    <div class="panel-body" >
+                      <div class="form-group">
+                        <label>Do I want a reception?</label>                        
+                        <div>
+                          <label class="radio-inline"><input type="radio" name="receptionradio">Yes</label>
+                          <label class="radio-inline"><input type="radio" name="receptionradio">No</label>
+                        </div>                        
+                      </div>
+                      <div class="form-group">
+                        <label>If yes, should my reception be public?</label>
+                        <select class="form-control">
+                          <option>Yes, public</option>
+                          <option>No, private</option>
+                        </select>                     
+                      </div>
+                      <div class="form-group">
+                        <label>Reception Location</label>
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <label>Describe my food preferences for the reception?</label>
+                        <textarea class="form-control"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label>Describe my drink preferences for the reception?</label>
+                        <textarea class="form-control"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <a type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal3">&plus; Add Music from My Files</a> 
+                      </div>
+                      <div class="form-group">
+                        <label>Describe my flower preferences for the reception?</label>
+                        <textarea class="form-control"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label>Notes:</label>
+                        <textarea class="form-control"></textarea>
+                      </div>
+                      <div class="form-group pull-right text-right">
+                        <a href="#" class="btn btn-success">Save</a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion4" href="#collapse44">
+                        <span class="toggle-icon glyphicon glyphicon-chevron-right"></span>&nbsp;My Headstone
+                      </a>                      
+                    </h4>
+                  </div>
+                  <div id="collapse44" class="panel-collapse collapse">
+                    <div class="panel-body" >
+                      <div class="form-group">
+                        <label>Do I want a headstone?</label>                        
+                        <div>
+                          <label class="radio-inline"><input type="radio" name="headstoneradio">Yes</label>
+                          <label class="radio-inline"><input type="radio" name="headstoneradio">No</label>
+                        </div>                        
+                      </div>
+                      <div class="form-group">
+                        <label>What epitaph would I like inscribed on my headstone?</label>
+                        <textarea class="form-control"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label>Do I want to have an individual headstone?</label>
+                        <select class="form-control">
+                          <option>Yes, individual headstone</option>
+                          <option>No, companion headstone</option>
+                        </select>                     
+                      </div>
+                      <div class="form-group">
+                        <label>What material would I like my headstone to be made of?</label>
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <label>Describe my flower preferences to be arranged with my headstone?</label>
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <label>Do I want a vase add-on included with my headstone design?</label>
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <label>Notes:</label>
+                        <textarea class="form-control"></textarea>
+                      </div>
+                      <div class="form-group pull-right text-right">
+                        <a href="#" class="btn btn-success">Save</a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion4" href="#collapse45">
+                        <span class="toggle-icon glyphicon glyphicon-chevron-right"></span>&nbsp;My Memorial Marker
+                      </a>                      
+                    </h4>
+                  </div>
+                  <div id="collapse45" class="panel-collapse collapse">
+                    <div class="panel-body" >
+                      <div class="form-group">
+                        <label>Do I want a memorial marker?</label>                        
+                        <div>
+                          <label class="radio-inline"><input type="radio" name="mmarkerradio">Yes</label>
+                          <label class="radio-inline"><input type="radio" name="mmarkerradio">No</label>
+                        </div>                        
+                      </div>
+                      <div class="form-group">
+                        <label>What type of Memorial Marker would I like? (pick one or more)</label>
+                        <div class="checkbox">
+                          <label><input type="checkbox" value="">Bench</label>
+                        </div>
+                        <div class="checkbox">
+                          <label><input type="checkbox" value="">Tree</label>
+                        </div>
+                        <div class="checkbox">
+                          <label><input type="checkbox" value="">Garden</label>
+                        </div>
+                        <div class="checkbox">
+                          <label><input type="checkbox" value="">Dedication ( building, exhibit, book, charity, etc.)</label>
+                        </div>
+                        <div class="checkbox">
+                          <label><input type="checkbox" value="">Garden Plaque</label>
+                        </div>
+                        <div class="checkbox">
+                          <label><input type="checkbox" value="">Statue</label>
+                        </div>
+                        <div class="checkbox">
+                          <label><input type="checkbox" value="">Other</label>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label>Do I want an epitaph or some type of text inscribed or included with my memorial marker(s)?</label>
+                        <textarea class="form-control"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label>Notes:</label>
+                        <textarea class="form-control"></textarea>
+                      </div>
+                      <div class="form-group pull-right text-right">
+                        <a href="#" class="btn btn-success">Save</a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion4" href="#collapse46">
+                        <span class="toggle-icon glyphicon glyphicon-chevron-right"></span>&nbsp;My Memorial Contribution
+                      </a>                      
+                    </h4>
+                  </div>
+                  <div id="collapse46" class="panel-collapse collapse">
+                    <div class="panel-body" >
+                      <div class="form-group">
+                        <label>Would I like people to make memorial contributions in my memory?</label>                        
+                        <div>
+                          <label class="radio-inline"><input type="radio" name="mcontributionradio">Yes</label>
+                          <label class="radio-inline"><input type="radio" name="mcontributionradio">No</label>
+                        </div>                        
+                      </div>
+                      <div class="form-group">
+                        <label>I would like memorial contributions sent to these organizations or groups: </label>
+                        <textarea class="form-control"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label>Notes:</label>
+                        <textarea class="form-control"></textarea>
+                      </div>
+                      <div class="form-group pull-right text-right">
+                        <a href="#" class="btn btn-success">Save</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion4" href="#collapse47">
+                        <span class="toggle-icon glyphicon glyphicon-chevron-right"></span>&nbsp;My Program
+                      </a>                      
+                    </h4>
+                  </div>
+                  <div id="collapse47" class="panel-collapse collapse">
+                    <div class="panel-body" >
+                      <div class="form-group">
+                        <label>Describe my design preferences for my program:</label>
+                        <textarea class="form-control"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label>Do I want an epitaph or some type of headline tex to be included on the cover of my program?</label>
+                        <textarea class="form-control"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label>Are there any specific words or details I would like included in the body of my program?</label>
+                        <textarea class="form-control"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label>Notes:</label>
+                        <textarea class="form-control"></textarea>
+                      </div>
+                      <div class="form-group pull-right text-right">
+                        <a href="#" class="btn btn-success">Save</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion4" href="#collapse48">
+                        <span class="toggle-icon glyphicon glyphicon-chevron-right"></span>&nbsp;My Transportation
+                      </a>                      
+                    </h4>
+                  </div>
+                  <div id="collapse48" class="panel-collapse collapse">
+                    <div class="panel-body" >
+                      <div class="form-group">
+                        <label>How would I like the transportation of my body to be arranged?</label>
+                        <textarea class="form-control"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label>How would I like the transportation of my family and loved ones to be arranged?</label>
+                        <textarea class="form-control"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label>Notes:</label>
+                        <textarea class="form-control"></textarea>
+                      </div>
+                      <div class="form-group pull-right text-right">
+                        <a href="#" class="btn btn-success">Save</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
               </div>              
             </div>
 
@@ -824,7 +1157,62 @@
   <!-- /.modal-dialog --> 
 </div>
 
-<form class="my-form-element" cf-form ...>
+  <div class="modal fade" id="myModal3" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Selct Music File</h4>
+        </div>
+        <div class="modal-body">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Artist</th>
+                <th>Song Title</th>
+                <th>Reason</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="checkbox" value=""></td>
+                <td>Celine Dion</td>
+                <td>Beauty and the Beast</td>
+                <td>This is reason.</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" value=""></td>
+                <td>Peabo Bryson</td>
+                <td>Beauty and the Beast</td>
+                <td>This is reason.</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" value=""></td>
+                <td>Ariana Grande</td>
+                <td>Beauty and the Beast</td>
+                <td>This is reason.</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" value=""></td>
+                <td>John Legend</td>
+                <td>Beauty and the Beast</td>
+                <td>This is reason.</td>
+              </tr>
+            </tbody>
+          </table>
+       </div>
+       <div class="modal-footer ">
+        <button type="button" class="btn btn-success" ><span class="glyphicon glyphicon-ok-sign"></span> Ok</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+      </div>
+    </div>
+    <!-- /.modal-content --> 
+  </div>
+  <!-- /.modal-dialog --> 
+</div>
+
+<!-- <form class="my-form-element" cf-form ...>
   <input type="text" name="_" cf-questions="Hi, I’m here to help you plan your funeral." required>
   <input type="radio" cf-questions="Do you want to have a traditional burial?" value="Yes" cf-label="Yes" name="traditional-burial" >
   <input type="radio" value="No" cf-label="No" name="traditional-burial">
@@ -834,7 +1222,7 @@
   <input type="text" name="coffin" cf-questions="Have you picked out a coffin? Do you have any specific preferences?" required>
   <input type="text" name="last-wish" cf-questions="Are there any other notes or plans that you’d like to include about your last wishes for your funeral?" required>
   <input type="submit" value="Submit">
-</form>
+</form> -->
 
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery.inview.min.js"></script>
