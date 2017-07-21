@@ -13,6 +13,7 @@
   <link href="css/main.css" rel="stylesheet">
   <link id="css-preset" href="css/presets/preset1.css" rel="stylesheet">
   <link href="css/responsive.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker3.min.css">
 
   <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -109,7 +110,7 @@
             <li role="presentation"><a href="#mbody" data-toggle="tab">My Body</a></li>
             <li role="presentation"><a href="#mpossession" data-toggle="tab">My Possessions</a></li>
             <li role="presentation"><a href="#mfuneral" data-toggle="tab">My Funeral</a></li>
-            <li role="presentation"><a href="#mbody" data-toggle="tab">My Story</a></li>
+            <li role="presentation"><a href="#mstory" data-toggle="tab">My Story</a></li>
             <li role="presentation"><a href="#mbody" data-toggle="tab">My Files</a></li>
             <li role="presentation"><a href="#mbody" data-toggle="tab">My Sensitive Info</a></li>
             <div class="progress">
@@ -131,84 +132,86 @@
                   </div>
                   <div id="collapse1" class="panel-collapse collapse">
                     <div class="panel-body">
-                      <table class="table">
-                        <thead>
-                          <tr>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Phone</th>
-                            <th>Relation</th>
-                            <th>Notes</th>
-                            <th>Edit</th>                      
-                            <th>Delete</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>John Doe</td>
-                            <td>john@example.com</td>
-                            <td>111-111-1111</td>
-                            <td>Brother</td>
-                            <td>Older Brother</td>
-                            <td>
-                              <p data-placement="top" data-toggle="tooltip" title="Edit">
-                                <button class="btn btn-success btn-xs" data-title="Edit" data-toggle="modal" data-target="#editModal" >
-                                  <span class="glyphicon glyphicon-pencil"></span>
-                                </button>
-                              </p>
-                            </td>
-                            <td>
-                              <p data-placement="top" data-toggle="tooltip" title="Delete">
-                                <button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#deleteModal" >
-                                  <span class="glyphicon glyphicon-trash"></span>
-                                </button>
-                              </p>
-                            </td> 
-                          </tr>
-                          <tr>
-                            <td>John Doe</td>
-                            <td>john@example.com</td>
-                            <td>111-111-1111</td>
-                            <td>Brother</td>
-                            <td>Older Brother</td>
-                            <td>
-                              <p data-placement="top" data-toggle="tooltip" title="Edit">
-                                <button class="btn btn-success btn-xs" data-title="Edit" data-toggle="modal" data-target="#editModal" >
-                                  <span class="glyphicon glyphicon-pencil"></span>
-                                </button>
-                              </p>
-                            </td>
-                            <td>
-                              <p data-placement="top" data-toggle="tooltip" title="Delete">
-                                <button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#deleteModal" >
-                                  <span class="glyphicon glyphicon-trash"></span>
-                                </button>
-                              </p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>John Doe</td>
-                            <td>john@example.com</td>
-                            <td>111-111-1111</td>
-                            <td>Brother</td>
-                            <td>Older Brother</td>
-                            <td>
-                              <p data-placement="top" data-toggle="tooltip" title="Edit">
-                                <button class="btn btn-success btn-xs" data-title="Edit" data-toggle="modal" data-target="#editModal" >
-                                  <span class="glyphicon glyphicon-pencil"></span>
-                                </button>
-                              </p>
-                            </td>
-                            <td>
-                              <p data-placement="top" data-toggle="tooltip" title="Delete">
-                                <button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#deleteModal" >
-                                  <span class="glyphicon glyphicon-trash"></span>
-                                </button>
-                              </p>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+                      <div class="table-responsive">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Name</th>
+                              <th>Email</th>
+                              <th>Phone</th>
+                              <th>Relation</th>
+                              <th>Notes</th>
+                              <th>Edit</th>                      
+                              <th>Delete</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>John Doe</td>
+                              <td>john@example.com</td>
+                              <td>111-111-1111</td>
+                              <td>Brother</td>
+                              <td>Older Brother</td>
+                              <td>
+                                <p data-placement="top" data-toggle="tooltip" title="Edit">
+                                  <button class="btn btn-success btn-xs" data-title="Edit" data-toggle="modal" data-target="#editModal" >
+                                    <span class="glyphicon glyphicon-pencil"></span>
+                                  </button>
+                                </p>
+                              </td>
+                              <td>
+                                <p data-placement="top" data-toggle="tooltip" title="Delete">
+                                  <button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#deleteModal" >
+                                    <span class="glyphicon glyphicon-trash"></span>
+                                  </button>
+                                </p>
+                              </td> 
+                            </tr>
+                            <tr>
+                              <td>John Doe</td>
+                              <td>john@example.com</td>
+                              <td>111-111-1111</td>
+                              <td>Brother</td>
+                              <td>Older Brother</td>
+                              <td>
+                                <p data-placement="top" data-toggle="tooltip" title="Edit">
+                                  <button class="btn btn-success btn-xs" data-title="Edit" data-toggle="modal" data-target="#editModal" >
+                                    <span class="glyphicon glyphicon-pencil"></span>
+                                  </button>
+                                </p>
+                              </td>
+                              <td>
+                                <p data-placement="top" data-toggle="tooltip" title="Delete">
+                                  <button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#deleteModal" >
+                                    <span class="glyphicon glyphicon-trash"></span>
+                                  </button>
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>John Doe</td>
+                              <td>john@example.com</td>
+                              <td>111-111-1111</td>
+                              <td>Brother</td>
+                              <td>Older Brother</td>
+                              <td>
+                                <p data-placement="top" data-toggle="tooltip" title="Edit">
+                                  <button class="btn btn-success btn-xs" data-title="Edit" data-toggle="modal" data-target="#editModal" >
+                                    <span class="glyphicon glyphicon-pencil"></span>
+                                  </button>
+                                </p>
+                              </td>
+                              <td>
+                                <p data-placement="top" data-toggle="tooltip" title="Delete">
+                                  <button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#deleteModal" >
+                                    <span class="glyphicon glyphicon-trash"></span>
+                                  </button>
+                                </p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>                        
                       <br>
                       <a type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">Add New Person</a>
 
@@ -427,77 +430,78 @@
                   </div>
                   <div id="collapse31" class="panel-collapse collapse">
                     <div class="panel-body">
-
-                      <table class="table">
-                        <thead>
-                          <tr>
-                            <th>Possessions</th>
-                            <th>Person</th>
-                            <th>Notes</th>
-                            <th>Edit</th>
-                            <th>Delete</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>Mike Smith</td>
-                            <td>Golf Clubs</td>
-                            <td>Older Brother, loves golf</td>
-                            <td>
-                              <p data-placement="top" data-toggle="tooltip" title="Edit">
-                                <button class="btn btn-success btn-xs" data-title="Edit" data-toggle="modal" data-target="#editModal2" >
-                                  <span class="glyphicon glyphicon-pencil"></span>
-                                </button>
-                              </p>
-                            </td>
-                            <td>
-                              <p data-placement="top" data-toggle="tooltip" title="Delete">
-                                <button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#deleteModal2" >
-                                  <span class="glyphicon glyphicon-trash"></span>
-                                </button>
-                              </p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>Mike Smith</td>
-                            <td>Golf Clubs</td>
-                            <td>Older Brother, loves golf</td>
-                            <td>
-                              <p data-placement="top" data-toggle="tooltip" title="Edit">
-                                <button class="btn btn-success btn-xs" data-title="Edit" data-toggle="modal" data-target="#editModal2" >
-                                  <span class="glyphicon glyphicon-pencil"></span>
-                                </button>
-                              </p>
-                            </td>
-                            <td>
-                              <p data-placement="top" data-toggle="tooltip" title="Delete">
-                                <button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#deleteModal2" >
-                                  <span class="glyphicon glyphicon-trash"></span>
-                                </button>
-                              </p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>Mike Smith</td>
-                            <td>Golf Clubs</td>
-                            <td>Older Brother, loves golf</td>
-                            <td>
-                              <p data-placement="top" data-toggle="tooltip" title="Edit">
-                                <button class="btn btn-success btn-xs" data-title="Edit" data-toggle="modal" data-target="#editModal2" >
-                                  <span class="glyphicon glyphicon-pencil"></span>
-                                </button>
-                              </p>
-                            </td>
-                            <td>
-                              <p data-placement="top" data-toggle="tooltip" title="Delete">
-                                <button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#deleteModal2" >
-                                  <span class="glyphicon glyphicon-trash"></span>
-                                </button>
-                              </p>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+                      <div class="table-responsive">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Possessions</th>
+                              <th>Person</th>
+                              <th>Notes</th>
+                              <th>Edit</th>
+                              <th>Delete</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Mike Smith</td>
+                              <td>Golf Clubs</td>
+                              <td>Older Brother, loves golf</td>
+                              <td>
+                                <p data-placement="top" data-toggle="tooltip" title="Edit">
+                                  <button class="btn btn-success btn-xs" data-title="Edit" data-toggle="modal" data-target="#editModal2" >
+                                    <span class="glyphicon glyphicon-pencil"></span>
+                                  </button>
+                                </p>
+                              </td>
+                              <td>
+                                <p data-placement="top" data-toggle="tooltip" title="Delete">
+                                  <button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#deleteModal2" >
+                                    <span class="glyphicon glyphicon-trash"></span>
+                                  </button>
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Mike Smith</td>
+                              <td>Golf Clubs</td>
+                              <td>Older Brother, loves golf</td>
+                              <td>
+                                <p data-placement="top" data-toggle="tooltip" title="Edit">
+                                  <button class="btn btn-success btn-xs" data-title="Edit" data-toggle="modal" data-target="#editModal2" >
+                                    <span class="glyphicon glyphicon-pencil"></span>
+                                  </button>
+                                </p>
+                              </td>
+                              <td>
+                                <p data-placement="top" data-toggle="tooltip" title="Delete">
+                                  <button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#deleteModal2" >
+                                    <span class="glyphicon glyphicon-trash"></span>
+                                  </button>
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Mike Smith</td>
+                              <td>Golf Clubs</td>
+                              <td>Older Brother, loves golf</td>
+                              <td>
+                                <p data-placement="top" data-toggle="tooltip" title="Edit">
+                                  <button class="btn btn-success btn-xs" data-title="Edit" data-toggle="modal" data-target="#editModal2" >
+                                    <span class="glyphicon glyphicon-pencil"></span>
+                                  </button>
+                                </p>
+                              </td>
+                              <td>
+                                <p data-placement="top" data-toggle="tooltip" title="Delete">
+                                  <button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#deleteModal2" >
+                                    <span class="glyphicon glyphicon-trash"></span>
+                                  </button>
+                                </p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>                      
                       <br>
                       <a type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal2">Add New Possession</a>              
 
@@ -874,6 +878,74 @@
               </div>              
             </div>
 
+            <div role="tabpanel" class="tab-pane wow bounceInRight" id="mstory" >
+              <div class="panel-group" id="accordion5">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion5" href="#collapse51">
+                        <span class="toggle-icon glyphicon glyphicon-chevron-right"></span>&nbsp;My Obituary
+                      </a>                      
+                    </h4>
+                  </div>
+                  <div id="collapse51" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <div class="form-group">
+                        <label>Do I want to have an obituary?</label>
+                        <div>
+                          <label class="radio-inline"><input type="radio" name="obituaryradio">Yes</label>
+                          <label class="radio-inline"><input type="radio" name="obituaryradio">No</label>
+                        </div>                        
+                      </div>
+                      <div class="form-group">
+                        <label>What is my date of birth?</label>
+                        <input type="tex" class="form-control input-date">                         
+                      </div>
+                      <div class="form-group">
+                        <label>What is my place of birth?</label>
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <label>My list of schools attended:</label>
+                        <textarea class="form-control"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label>Describe my careers and professional journey:</label>
+                        <textarea class="form-control"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label>Other activities and hobbies that I enjoy:</label>
+                        <textarea class="form-control"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label>I want people to remember me for the following:</label>
+                        <textarea class="form-control"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label>Are there any other details I would like included:</label>
+                        <textarea class="form-control"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label>Where would I like my obituary published:</label>
+                        <textarea class="form-control"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label>I wrote my own obituary and would like it to say the following:</label>
+                        <textarea class="form-control"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label>Notes</label>
+                        <textarea class="form-control"></textarea>
+                      </div>
+                      <div class="form-group pull-right text-right">
+                        <a href="#" class="btn btn-success">Save</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>    
@@ -1223,7 +1295,7 @@
   <input type="text" name="last-wish" cf-questions="Are there any other notes or plans that you’d like to include about your last wishes for your funeral?" required>
   <input type="submit" value="Submit">
 </form> -->
-
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery.inview.min.js"></script>
 <script type="text/javascript" src="js/wow.min.js"></script>

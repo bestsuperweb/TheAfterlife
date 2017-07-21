@@ -1148,7 +1148,7 @@ ul.address {
 .avatar-nav-link:hover{
   transform: scale(1.2);
 }
-.dropdown-menu{
+.main-nav .dropdown-menu{
   background: #7c77b9;
 }
 .dropdown-menu li a{
