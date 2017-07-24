@@ -1200,6 +1200,10 @@ ul.address {
   background: gainsboro;
   border-radius: 0 0 6px 6px;
 }
+.modal-body{
+  max-height: calc( 100vh - 160px);
+  overflow-y: scroll;
+}
 .member-body .tab-content{
   padding: 20px 0;
 }
