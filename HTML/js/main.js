@@ -184,6 +184,11 @@ jQuery(function($) {
 	// google.maps.event.addDomListener(window, 'load', initialize_map);
 
 	$('.input-date').datepicker({ });
+
+	$('.draggable-table tbody').sortable({
+		axis: 'y',
+		cursor: 'move'
+	});
 	
 });
 

@@ -1215,7 +1215,13 @@ ul.address {
 .member-body #accordion>.panel{
   margin-bottom: -3px;
 }
-
+#myModal9 #myCarousel h3{
+  color: #ffffff;
+}
+.draggable-table tbody{
+  position: relative;
+  cursor: pointer;
+}
 /*#mbody .panel-heading{
   background: gray;
 }*/
