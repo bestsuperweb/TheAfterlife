@@ -1222,7 +1222,8 @@ ul.address {
 #myModal9 #myCarousel h3{
   color: #ffffff;
 }
-.draggable-table tbody{
+
+.draggable-table{
   position: relative;
   cursor: pointer;
 }
