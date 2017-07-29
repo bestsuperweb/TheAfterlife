@@ -1233,5 +1233,17 @@ ul.address {
 }*/
 /* member side ---*/
 
+/*---- member vendor */
+.vendor-banner .vendor-search .form-control{
+  color: #fff;
+}
+.vendor-banner .vendor-search .first-category{
+  border-right: none !important;
+}
+.vendor-banner .vendor-search .second-category{
+  border-left: 1px dashed gray !important;
+}
+/* member vendor ---*/
+
 
 
