@@ -1151,12 +1151,12 @@ ul.address {
 .main-nav .dropdown-menu{
   background: #7c77b9;
 }
-.dropdown-menu li a{
+.main-nav .dropdown-menu li a{
   padding: 10px;
   background-color: transparent !important;
   color: #fff !important;
 }
-.dropdown-menu li:hover{
+.main-nav .dropdown-menu li:hover{
   background-color: rgba(0,0,0,.2);
 }
 
@@ -1228,9 +1228,6 @@ ul.address {
   position: relative;
   cursor: pointer;
 }
-/*#mbody .panel-heading{
-  background: gray;
-}*/
 /* member side ---*/
 
 /*---- member vendor */
@@ -1244,6 +1241,52 @@ ul.address {
   border-left: 1px dashed gray !important;
 }
 /* member vendor ---*/
+
+/*--- memeber search */
+.search-filter input{
+  width: 30% !important;
+  border-color: rgb(204, 204, 204) !important;
+  color: #fff;
+}
+.search-filter{
+  padding: 20px 0;
+}
+.search-filter span.input-group-addon{
+  background: transparent;
+  color: #fff;
+}
+.search-filter *:not(:last-child){
+    border-right-width: 0;
+}
+.search-filter .dropdown-menu{
+  top: 70%;
+  padding: 15px 0;
+}
+.star-rating span{
+  font-size: 18px;
+  color: #ffbd00;
+}
+.star-rating a{
+  transition: .5s all ease;
+  background-color: transparent !important;
+}
+.star-rating a:hover{
+  transform: scale(1.05);
+  background-color: transparent !important;
+}
+.search-result-div{
+  margin-bottom: 20px;
+}
+#search-map{
+  height: 700px
+}
+#search-map .map-content{
+  margin-right: 0;
+}
+.carousel-control .glyphicon-menu-left, .carousel-control .glyphicon-menu-right{
+  top: 50%;
+}
+/* member search -----*/
 
 
 
