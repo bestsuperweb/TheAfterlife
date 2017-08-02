@@ -1246,21 +1246,28 @@ ul.address {
 .search-filter input{
   width: 30% !important;
   border-color: rgb(204, 204, 204) !important;
-  color: #fff;
 }
 .search-filter{
   padding: 20px 0;
+  margin-bottom: 15px;
 }
 .search-filter span.input-group-addon{
-  background: transparent;
-  color: #fff;
+  border-radius: 4px 0 0 4px !important;
 }
-.search-filter *:not(:last-child){
+.search-filter .input-group *:not(:last-child){
     border-right-width: 0;
 }
 .search-filter .dropdown-menu{
-  top: 70%;
   padding: 15px 0;
+}
+.radius-slider{
+  padding: 20px !important;
+}
+#exSlider .slider-selection {
+  background: #7c77b9;
+}
+#exSlider .slider-handle{
+  background: #7c77b9;
 }
 .star-rating span{
   font-size: 18px;

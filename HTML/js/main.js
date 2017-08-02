@@ -189,6 +189,18 @@ jQuery(function($) {
 		axis: 'y',
 		cursor: 'move'
 	});
+
+	var mySlider = $("input.slider").bootstrapSlider({
+		formatter: function(value) {
+			return value + ' miles';
+		}
+	});
+
+	$("input.slider").on('change', function(event) {
+		event.preventDefault();
+		/* Act on the event */
+		$('.search-filter .radius').val($(this).val());
+	});
 	
 });
 
