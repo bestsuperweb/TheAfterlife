@@ -61,7 +61,7 @@
 		padding: 10px 30px;
 	}
 	.navbar-brand {
-		width: 150px;
+		width: 95px;
 		padding: 0 15px 15px;
 	}
 	.navbar-toggle {
@@ -217,6 +217,10 @@
 	.navbar-search input.form-control{
 	  width: 100% !important;
 	}
+	.vendor-banner .vendor-search .form-control{
+		width: 50% !important;
+	}
+
 }
 
 /* XS Portrait */

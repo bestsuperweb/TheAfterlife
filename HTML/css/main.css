@@ -1249,7 +1249,9 @@ ul.address {
 }
 .search-filter{
   padding: 20px 0;
-  margin-bottom: 15px;
+}
+.search-filter>div{
+  margin-bottom: 10px;
 }
 .search-filter span.input-group-addon{
   border-radius: 4px 0 0 4px !important;
