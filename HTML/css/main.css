@@ -1334,11 +1334,9 @@ ul.address {
   padding: 5px;
 }
 .general_price_list .toggle_icon{
-  font-size: 20px;
-  color: #fff;
-  background: #7c77b9;
-  border-radius: 50%;
-  padding: 0px 8px;
+  font-size: 25px;
+  color: #7c77b9;
+  margin-right: 3px;
 }
 .general_price_list .price_description{
   color: #027db3;

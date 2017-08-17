@@ -186,11 +186,10 @@ jQuery(function($) {
 		event.preventDefault();
 		/* Act on the event */
 		var index = $('.price_heading').index($(this));
-		var icon = $('.toggle_icon').eq(index).html();
-		if ( icon == '+') {
-			$('.toggle_icon').eq(index).html('&minus;');
+		if ( $('.toggle_icon').eq(index).hasClass('fa-plus-circle')) {
+			$('.toggle_icon').eq(index).removeClass('fa-plus-circle').addClass('fa-minus-circle');
 		}else{
-			$('.toggle_icon').eq(index).html('&plus;');
+			$('.toggle_icon').eq(index).removeClass('fa-minus-circle').addClass('fa-plus-circle');
 		}
 		
 	});
