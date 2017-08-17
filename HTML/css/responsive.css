@@ -1,5 +1,6 @@
 /* lg */ 
 @media (min-width: 1200px) {
+	
 
 }
 
@@ -278,3 +279,4 @@
 	}
 }
 
+@media (min-width:992px){.modal-xl{width:1140px}}

@@ -181,6 +181,19 @@ jQuery(function($) {
 		}		
 	});
 	
+	// vendor_profile.html	
+	$('.price_heading').on('click', function(event) {
+		event.preventDefault();
+		/* Act on the event */
+		var index = $('.price_heading').index($(this));
+		var icon = $('.toggle_icon').eq(index).html();
+		if ( icon == '+') {
+			$('.toggle_icon').eq(index).html('&minus;');
+		}else{
+			$('.toggle_icon').eq(index).html('&plus;');
+		}
+		
+	});
 	// google.maps.event.addDomListener(window, 'load', initialize_map);
 
 	$('.input-date').datepicker({ });
@@ -201,6 +214,8 @@ jQuery(function($) {
 		/* Act on the event */
 		$('.search-filter .radius').val($(this).val());
 	});
+
+
 	
 });
 

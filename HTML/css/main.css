@@ -1297,5 +1297,112 @@ ul.address {
 }
 /* member search -----*/
 
-
-
+/*-- vendor profile */
+.profile_banner{
+  background: url('../images/slider/2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+  position: relative;
+}
+.view_photos{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  border: none;
+}
+.profile_vendor{
+  /*padding: 20px 0;*/
+}
+.profile_vendor .map_detail{
+  box-shadow: 0 0 2px gray;
+  padding: 10px;
+}
+.profile_vendor .vendor_detail{
+  margin-top: 10px;
+  line-height: 35px;
+}
+.general_price_list{
+  margin-top: 15px;
+}
+.general_price_list .panel-heading{
+  background: #7c77b9;
+  color: #fff;
+  border-radius: 0;
+}
+.general_price_list .panel-body{
+  padding: 5px;
+}
+.general_price_list .toggle_icon{
+  font-size: 20px;
+  color: #fff;
+  background: #7c77b9;
+  border-radius: 50%;
+  padding: 0px 8px;
+}
+.general_price_list .price_description{
+  color: #027db3;
+  font-weight: bold;
+  line-height: 18px;
+  padding: 0 5px;
+}
+.general_price_list .origin_price{
+  color: #027db3;
+  text-decoration: line-through;
+}
+.general_price_list .discount_price{
+  color: green;
+  font-weight: bold;
+  font-size: 18px;
+  padding-left: 5px;
+}
+.general_price_list .discount_price sup{
+  color: #027db3;
+}
+.general_price_list .price_heading{
+  cursor: pointer;
+  padding: 20px 0;
+  border-bottom: 1px solid #7c77b9;
+}
+.general_price_list .price_details li{
+  list-style: none;
+  background-color: #f0eef6;
+  color: #027db3;
+  margin: 2px 0;
+  padding: 10px;
+  margin-left: -40px;
+  text-indent: 25px;
+}
+.profile_vendor .breadcrumb{
+  border-bottom: 1px solid rgb(219, 219, 219);
+  border-radius: 0;
+}
+.vendor_overview{
+  border-bottom: 1px solid rgb(219, 219, 219);
+  padding: 20px 0;
+}
+.vendor_overview_star{
+  color: #027db3;
+  margin-left: 10px;
+}
+.vendor_overview .vendor_avatar{
+  width: 70%;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+}
+#vendor_profile .vendor_profile_avatar{
+  width: 150px;
+  margin: auto;
+}
+#vendor_photos .modal-body{
+  padding: 0;
+  overflow-y: initial;
+}
+#vendor_profile .vendor_profile_education{
+  font-size: 14px;
+}
+.vendor_overview .icongraphy{
+  color: rgb(118, 118, 118);
+}
+/* vendor profile ---*/
