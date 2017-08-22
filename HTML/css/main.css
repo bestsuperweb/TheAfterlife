@@ -1533,7 +1533,7 @@ ul.address {
 }
 .review_stars{
   color: #ffbd00;
-  vertical-align: calc( 50% - 4px);
+  vertical-align: 50%;
 }
 
 
