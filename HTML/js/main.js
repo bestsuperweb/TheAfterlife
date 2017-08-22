@@ -151,26 +151,18 @@ jQuery(function($) {
 		$("#portfolio-single").slideUp(500);
 	});
 
-	// Contact form
-	var form = $('#main-contact-form');
-	form.submit(function(event){
-		event.preventDefault();
-		var form_status = $('<div class="form_status"></div>');
-		$.ajax({
-			url: $(this).attr('action'),
-			beforeSend: function(){
-				form.prepend( form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Email is sending...</p>').fadeIn() );
-			}
-		}).done(function(data){
-			form_status.html('<p class="text-success">Thank you for contact us. As early as possible  we will contact you</p>').delay(3000).fadeOut();
-		});
-	});
-
+	
 	$('.cdropdown').hover(function() {
 	  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
 	}, function() {
 	  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
 	});
+
+	$('.product_rating_stars').on('click', function(){
+		var target_top = $(".ranking_caption").offset().top - 100;
+		$('html, body').animate({scrollTop:target_top}, 800);
+	});
+
 
 	$('a[data-toggle="collapse"]').click(function () {
 		if ($(this).find('span.toggle-icon').hasClass('glyphicon-chevron-down')) {
@@ -202,7 +194,25 @@ jQuery(function($) {
 		cursor: 'move'
 	});
 
-	var mySlider = $("input.slider").bootstrapSlider({
+	$('#thumbnail_carousel').flexslider({
+	    animation: "slide",
+	    controlNav: false,
+	    animationLoop: false,
+	    slideshow: false,
+	    itemWidth: 100,
+	    itemMargin: 5,
+	    asNavFor: '#product_slider'
+	  });
+	 
+	$('#product_slider').flexslider({
+	    animation: "slide",
+	    controlNav: false,
+	    animationLoop: false,
+	    slideshow: false,
+	    sync: "#thumbnail_carousel"
+	  });
+
+	$("input.slider").bootstrapSlider({
 		formatter: function(value) {
 			return value + ' miles';
 		}
@@ -215,6 +225,5 @@ jQuery(function($) {
 	});
 
 
-	
 });
 
