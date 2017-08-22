@@ -1531,6 +1531,10 @@ ul.address {
 .add_cart_btn:hover{
   border-color: #963484;
 }
+.review_stars{
+  color: #ffbd00;
+  vertical-align: calc( 50% - 4px);
+}
 
 
 
