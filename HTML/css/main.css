@@ -1656,4 +1656,24 @@ ul.address {
 
 /* check out page ---*/
 
+/*--- planning page */
+.add-to-do{
+  padding: 3% 10%;
+  margin-top: 10%;
+}
+.add-to-do .add-to-do-name{
+  font-size: 18px;
+  font-weight: 600;
+  height: 40px;
+}
+.add-to-do .fr-box{
+  display: none;
+}
+.add-to-do .fr-box .fr-view{
+  min-height: 200px !important;
+}
+.add-to-do .btn-primary{
+  border: none;
+}
+/* plannning page ---*/
 

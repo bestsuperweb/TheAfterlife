@@ -224,6 +224,12 @@ jQuery(function($) {
 		$('.search-filter .radius').val($(this).val());
 	});
 
+	$('.text-editor').froalaEditor();
+
+	$('.add-to-do-extra').on('focus', function(){
+		$(this).hide();
+		$('.add-to-do .fr-box').slideDown();
+	});
 
 });
 
