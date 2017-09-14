@@ -13,7 +13,8 @@
   <link href="css/main.css" rel="stylesheet">
   <link id="css-preset" href="css/presets/preset1.css" rel="stylesheet">
   <link href="css/responsive.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.1/css/bootstrap-slider.min.css">
+  <link rel="stylesheet" type="text/css" href="css/progress-circle.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.1/css/bootstrap-slider.min.css">  
 
   <!-- html editor  -->
   <link href='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.6.5/css/froala_editor.min.css' rel='stylesheet' type='text/css' />
@@ -85,21 +86,170 @@
       </div><!--/#main-nav-->
     </header>
 
-    <section>
+    <section id="checklist-container">
       <div class="container">
-        <div class="well add-to-do">
-          <h2 class="text-center text-muted"><b>To-dos</b></h2>
-          <div class="form-group">
-            <input type="text" class="form-control add-to-do-name" name="" placeholder="Name this list...">  
+        <div class="row">
+          <div class="col-xs-3"> 
+            <a href="#"><i class="fa fa-long-arrow-left"></i> Home</a><br><br>
+            <h4 class="text-center"><b>Checklist</b></h4>
+            <ul class="nav nav-tabs tabs-left">
+              <li class="active">
+                <a href="#to-dos" data-toggle="tab"><i class="fa fa-tasks"></i> To-dos</a>
+              </li>
+              <li>
+                <a href="#budgets" data-toggle="tab"><i class="fa fa-tag"></i> Bugets</a>
+              </li>
+            </ul>
           </div>
-          <div class="form-group">
-            <input type="text" class="form-control add-to-do-extra" placeholder="Add extra details or attach a file..." name="">
-            <textarea class="text-editor" ></textarea>  
+
+          <div class="col-xs-9">
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div class="tab-pane active" id="to-dos">
+                <div class="list-title">
+                  <h3 class="text-muted"><i class="fa fa-list-ul"></i> <b> To-do List 1</b></h3>
+                  <b>You are <span class="text-info">40%</span> done planning!</b>        
+                </div>             
+                <ul class="list-group-sortable-connected">
+                    <li class="list-item">
+                      <i class="fa fa-check-circle text-success"></i> 
+                      <a href="#" class="text-muted" >Sub list 1</a>
+                      <span class="label label-info"><i class="fa fa-star"></i> Recommended Vendors</span>
+                      <span class="pull-right list-menu">
+                        <i class="fa fa-clock-o" data-toggle="tooltip" data-placement="top" title="10 Sep - 10 Oct" ></i>
+                        <i class="fa fa-trash-o" onclick="confirm('Are you sure to delete this item?')"></i>
+                        <i class="fa fa-ellipsis-h"></i>
+                      </span>
+                    </li>
+                    <li class="list-item">
+                      <i class="fa fa-circle-o"></i>
+                      <a href="#" class="text-muted" >Sub list 2</a>
+                      <span class="pull-right list-menu">
+                        <i class="fa fa-clock-o" data-toggle="tooltip" data-placement="top" title="10 Sep - 10 Oct" ></i>
+                        <i class="fa fa-trash-o" onclick="confirm('Are you sure to delete this item?')"></i>
+                        <i class="fa fa-ellipsis-h"></i>
+                      </span>
+                    </li>
+                    <li class="list-item">
+                      <i class="fa fa-check-circle text-success"></i> 
+                      <a href="#" class="text-muted" >Sub list 3</a>
+                      <span class="label label-info"><i class="fa fa-star"></i> Recommended Vendors</span>
+                      <span class="pull-right list-menu">
+                        <i class="fa fa-clock-o" data-toggle="tooltip" data-placement="top" title="10 Sep - 10 Oct" ></i>
+                        <i class="fa fa-trash-o" onclick="confirm('Are you sure to delete this item?')"></i>
+                        <i class="fa fa-ellipsis-h"></i>
+                      </span>
+                    </li>
+                    <li class="list-item">
+                      <i class="fa fa-circle-o"></i>
+                      <a href="#" class="text-muted" >Sub list 4</a>
+                      <span class="pull-right list-menu">
+                        <i class="fa fa-clock-o" data-toggle="tooltip" data-placement="top" title="10 Sep - 10 Oct" ></i>
+                        <i class="fa fa-trash-o" onclick="confirm('Are you sure to delete this item?')"></i>
+                        <i class="fa fa-ellipsis-h"></i>
+                      </span>
+                    </li>
+                    <li class="list-item">
+                      <i class="fa fa-circle-o"></i>
+                      <a href="#" class="text-muted" >Sub list 5</a>
+                      <span class="pull-right list-menu">
+                        <i class="fa fa-clock-o" data-toggle="tooltip" data-placement="top" title="10 Sep - 10 Oct" ></i>
+                        <i class="fa fa-trash-o" onclick="confirm('Are you sure to delete this item?')"></i>
+                        <i class="fa fa-ellipsis-h"></i>
+                      </span>
+                    </li>
+                </ul>
+                <div class="add-list-item">
+                  <a href="#" class="btn btn-default add-item-btn">Add a to-do</a>
+                  <div class="well add-to-do">
+                    <input type="text" placeholder="Add a new to-do..." class="form-control add-to-do-name" name="">
+                    <input type="text" placeholder="Assign to..." class="form-control" name="">
+                    <input type="text" placeholder="Add to the schedule..." class="form-control" name="">
+                    <input type="text" placeholder="Add extra details or attach a file..." class="form-control add-to-do-extra" name="">
+                    <textarea class="text-editor" ></textarea>
+                    <div class="add-list-item-buttons">
+                      <hr>
+                      <a href="#" class="btn btn-primary">Add this to-do</a>
+                      <a href="#" class="btn btn-default">Cancel</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="list-title">
+                  <h3 class="text-muted"><i class="fa fa-list-ul"></i> <b> To-do List 2</b></h3>
+                  <b>You are <span class="text-info">60%</span> done planning!</b>        
+                </div> 
+                <ul class="list-group-sortable-connected">
+                    <li class="list-item">
+                      <i class="fa fa-check-circle text-success"></i> 
+                      <a href="#" class="text-muted" >Sub list 1</a>
+                      <span class="label label-info"><i class="fa fa-star"></i> Recommended Vendors</span>
+                      <span class="pull-right list-menu">
+                        <i class="fa fa-clock-o" data-toggle="tooltip" data-placement="top" title="10 Sep - 10 Oct" ></i>
+                        <i class="fa fa-trash-o" onclick="confirm('Are you sure to delete this item?')"></i>
+                        <i class="fa fa-ellipsis-h"></i>
+                      </span>
+                    </li>
+                    <li class="list-item">
+                      <i class="fa fa-check-circle text-success"></i> 
+                      <a href="#" class="text-muted" >Sub list 2</a>
+                      <span class="label label-info"><i class="fa fa-star"></i> Recommended Vendors</span>                      
+                      <span class="pull-right list-menu">
+                        <i class="fa fa-clock-o" data-toggle="tooltip" data-placement="top" title="10 Sep - 10 Oct" ></i>
+                        <i class="fa fa-trash-o" onclick="confirm('Are you sure to delete this item?')"></i>
+                        <i class="fa fa-ellipsis-h"></i>
+                      </span>
+                    </li>
+                    <li class="list-item">
+                      <i class="fa fa-check-circle text-success"></i> 
+                      <a href="#" class="text-muted" >Sub list 3</a>
+                      <span class="label label-info"><i class="fa fa-star"></i> Recommended Vendors</span>
+                      <span class="pull-right list-menu">
+                        <i class="fa fa-clock-o" data-toggle="tooltip" data-placement="top" title="10 Sep - 10 Oct" ></i>
+                        <i class="fa fa-trash-o" onclick="confirm('Are you sure to delete this item?')"></i>
+                        <i class="fa fa-ellipsis-h"></i>
+                      </span>
+                    </li>
+                    <li class="list-item">
+                      <i class="fa fa-circle-o"></i>
+                      <a href="#" class="text-muted" >Sub list 4</a>
+                      <span class="pull-right list-menu">
+                        <i class="fa fa-clock-o" data-toggle="tooltip" data-placement="top" title="10 Sep - 10 Oct" ></i>
+                        <i class="fa fa-trash-o" onclick="confirm('Are you sure to delete this item?')"></i>
+                        <i class="fa fa-ellipsis-h"></i>
+                      </span>
+                    </li>
+                    <li class="list-item">
+                      <i class="fa fa-circle-o"></i>
+                      <a href="#" class="text-muted" >Sub list 5</a>
+                      <span class="pull-right list-menu">
+                        <i class="fa fa-clock-o" data-toggle="tooltip" data-placement="top" title="10 Sep - 10 Oct" ></i>
+                        <i class="fa fa-trash-o" onclick="confirm('Are you sure to delete this item?')"></i>
+                        <i class="fa fa-ellipsis-h"></i>
+                      </span>
+                    </li>
+                </ul>
+
+                <div class="add-list-item">
+                  <a href="#" class="btn btn-default add-item-btn">Add a to-do</a>
+                  <div class="well add-to-do">
+                    <input type="text" placeholder="Add a new to-do..." class="form-control add-to-do-name" name="">
+                    <input type="text" placeholder="Assign to..." class="form-control" name="">
+                    <input type="text" placeholder="Add to the schedule..." class="form-control" name="">
+                    <input type="text" placeholder="Add extra details or attach a file..." class="form-control add-to-do-extra" name="">
+                    <textarea class="text-editor" ></textarea>
+                    <div class="add-list-item-buttons">
+                      <hr>
+                      <a href="#" class="btn btn-primary">Add this to-do</a>
+                      <a href="#" class="btn btn-default">Cancel</a>
+                    </div>
+                  </div>                  
+                </div>
+                
+              </div>
+              <div class="tab-pane" id="budgets">Budgets.</div>
+            </div>
           </div>
-          <div class="form-group">
-            <a class="btn btn-primary">Add this list</a>
-          </div>
-          
         </div>
       </div>      
     </section>
@@ -117,7 +267,8 @@
 <script type="text/javascript" src="js/mousescroll.js"></script>
 <script type="text/javascript" src="js/smoothscroll.js"></script>
 <script type="text/javascript" src="js/jquery.countTo.js"></script>
-<script type="text/javascript" src="js/jquery.flexslider.js"></script> 
+<script type="text/javascript" src="js/jquery.flexslider.js"></script>
+<script type="text/javascript" src="js/jquery.sortable.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

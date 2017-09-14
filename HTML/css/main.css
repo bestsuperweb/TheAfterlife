@@ -1675,5 +1675,49 @@ ul.address {
 .add-to-do .btn-primary{
   border: none;
 }
+#checklist-container .list-item{
+ cursor: move;
+ list-style: none;
+ padding: 20px 0;
+ border-bottom:  1px solid rgba(0,0,0,.05);
+}
+
+#checklist-container .list-item>.fa{
+  cursor: pointer;
+  transform: scale(1.8);
+  margin-right: 10px;
+}
+#checklist-container .list-item .list-menu .fa{
+  margin-left: 10px;
+  cursor: pointer;
+}
+#checklist-container .list-item .label{
+  margin-left: 20px;
+}
+#checklist-container .list-title>b{
+  padding-left: 25px;
+}
+#checklist-container .add-list-item{
+  margin: 20px 0 50px 25px;
+}
+#checklist-container .add-list-item .well{
+  padding: 30px;
+  margin: 0 !important;
+  display: none;
+}
+#checklist-container .add-list-item .well .form-control{
+  margin: 10px 0;
+}
+.tabs-left{
+  border: none;
+}
+.tabs-left li{
+  width: 100%;
+}
+.tabs-left li a{  
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
 /* plannning page ---*/
 

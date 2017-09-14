@@ -228,8 +228,33 @@ jQuery(function($) {
 
 	$('.add-to-do-extra').on('focus', function(){
 		$(this).hide();
-		$('.add-to-do .fr-box').slideDown();
+		$(this).parent().children('.add-to-do .fr-box').slideDown();
 	});
+
+	$('.list-group-sortable-connected').sortable({
+        placeholderClass: 'list-item',
+        connectWith: '.connected'
+    });
+
+    $('[data-toggle="tooltip"]').tooltip(); 
+
+    $('.add-item-btn').on('click', function(){
+    	$(this).hide();
+    	$(this).parent().children('.add-to-do').slideDown();
+    });
+
+    $('.add-list-item-buttons a').on('click', function(){
+    	$(this).parent().parent().slideUp();
+    	$(this).parent().parent().parent().children('.add-item-btn').show();
+    });
+
+    $('#checklist-container .list-item>.fa').on('click', function(){
+    	if ($(this).hasClass('fa-circle-o')){
+    		$(this).removeClass('fa-circle-o').addClass('fa-check-circle').addClass('text-success');
+    	}else{
+    		$(this).removeClass('fa-check-circle').removeClass('text-success').addClass('fa-circle-o');
+    	}
+    });
 
 });
 
