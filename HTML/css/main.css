@@ -1691,6 +1691,13 @@ ul.address {
   margin-left: 10px;
   cursor: pointer;
 }
+#checklist-container .list-item .list-menu>span{
+  display: inline-flex;
+}
+#checklist-container .list-item .list-menu>span big{
+  margin: 10px;
+  line-height: 10px;
+}
 #checklist-container .list-item .label{
   margin-left: 20px;
 }
@@ -1708,6 +1715,22 @@ ul.address {
 #checklist-container .add-list-item .well .form-control{
   margin: 10px 0;
 }
+.schedules{
+  padding: 10px;
+  display: none;
+}
+.schedule-control{
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  transition: all .5s ease;
+  margin: 0 10px;
+}
+.schedule-control:focus{
+  border-bottom: 1px solid #7c77b9;
+}
+.schedules .radio label{
+  min-width: 100px;
+}
 .tabs-left{
   border: none;
 }
@@ -1719,5 +1742,41 @@ ul.address {
   padding-bottom: 20px;
 }
 
+time.icon{
+  font-size: .3em; /* change icon size */
+  display: block;
+  position: relative;
+  width: 6em;
+  height: 7em;
+  background-color: #fff;
+  border-radius: 0.6em;
+  box-shadow: 0 0 5px #bdbdbd;
+  overflow: hidden;
+}
+time.icon *{
+  display: block;
+  width: 100%;
+  font-size: 1em;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+}
+time.icon strong{
+  position: absolute;
+  top: -.5em;
+  padding: 0;
+  color: #fff;
+  background-color: #fd9f1b;
+  border-bottom: 1px dashed #f37302;
+  box-shadow: 0 2px 0 #fd9f1b;
+  height: 2em;
+  font-size: 2em;
+}
+time.icon span{
+  font-size: 2.8em;
+  letter-spacing: -0.05em;
+  padding-top: .7em;
+  color: #2f2f2f;
+}
 /* plannning page ---*/
 

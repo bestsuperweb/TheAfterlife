@@ -115,7 +115,17 @@
                       <a href="#" class="text-muted" >Sub list 1</a>
                       <span class="label label-info"><i class="fa fa-star"></i> Recommended Vendors</span>
                       <span class="pull-right list-menu">
-                        <i class="fa fa-clock-o" data-toggle="tooltip" data-placement="top" title="10 Sep - 10 Oct" ></i>
+                        <span>
+                          <time datetime="2014-09-20" class="icon">
+                            <strong>Sep</strong>
+                            <span>20</span>
+                          </time>
+                          <big>-</big>
+                          <time datetime="2014-10-20" class="icon">
+                            <strong>Oct</strong>
+                            <span>20</span>
+                          </time>
+                        </span>                        
                         <i class="fa fa-trash-o" onclick="confirm('Are you sure to delete this item?')"></i>
                         <i class="fa fa-ellipsis-h"></i>
                       </span>
@@ -124,7 +134,12 @@
                       <i class="fa fa-circle-o"></i>
                       <a href="#" class="text-muted" >Sub list 2</a>
                       <span class="pull-right list-menu">
-                        <i class="fa fa-clock-o" data-toggle="tooltip" data-placement="top" title="10 Sep - 10 Oct" ></i>
+                        <span>
+                          <time datetime="2014-09-20" class="icon">
+                            <strong>Sep</strong>
+                            <span>20</span>
+                          </time>
+                        </span> 
                         <i class="fa fa-trash-o" onclick="confirm('Are you sure to delete this item?')"></i>
                         <i class="fa fa-ellipsis-h"></i>
                       </span>
@@ -134,7 +149,17 @@
                       <a href="#" class="text-muted" >Sub list 3</a>
                       <span class="label label-info"><i class="fa fa-star"></i> Recommended Vendors</span>
                       <span class="pull-right list-menu">
-                        <i class="fa fa-clock-o" data-toggle="tooltip" data-placement="top" title="10 Sep - 10 Oct" ></i>
+                        <span>
+                          <time datetime="2014-09-20" class="icon">
+                            <strong>Sep</strong>
+                            <span>20</span>
+                          </time>
+                          <big>-</big>
+                          <time datetime="2014-10-20" class="icon">
+                            <strong>Oct</strong>
+                            <span>20</span>
+                          </time>
+                        </span> 
                         <i class="fa fa-trash-o" onclick="confirm('Are you sure to delete this item?')"></i>
                         <i class="fa fa-ellipsis-h"></i>
                       </span>
@@ -143,7 +168,17 @@
                       <i class="fa fa-circle-o"></i>
                       <a href="#" class="text-muted" >Sub list 4</a>
                       <span class="pull-right list-menu">
-                        <i class="fa fa-clock-o" data-toggle="tooltip" data-placement="top" title="10 Sep - 10 Oct" ></i>
+                        <span>
+                          <time datetime="2014-09-20" class="icon">
+                            <strong>Sep</strong>
+                            <span>20</span>
+                          </time>
+                          <big>-</big>
+                          <time datetime="2014-10-20" class="icon">
+                            <strong>Oct</strong>
+                            <span>20</span>
+                          </time>
+                        </span> 
                         <i class="fa fa-trash-o" onclick="confirm('Are you sure to delete this item?')"></i>
                         <i class="fa fa-ellipsis-h"></i>
                       </span>
@@ -152,7 +187,17 @@
                       <i class="fa fa-circle-o"></i>
                       <a href="#" class="text-muted" >Sub list 5</a>
                       <span class="pull-right list-menu">
-                        <i class="fa fa-clock-o" data-toggle="tooltip" data-placement="top" title="10 Sep - 10 Oct" ></i>
+                        <span>
+                          <time datetime="2014-09-20" class="icon">
+                            <strong>Sep</strong>
+                            <span>20</span>
+                          </time>
+                          <big>-</big>
+                          <time datetime="2014-10-20" class="icon">
+                            <strong>Oct</strong>
+                            <span>20</span>
+                          </time>
+                        </span> 
                         <i class="fa fa-trash-o" onclick="confirm('Are you sure to delete this item?')"></i>
                         <i class="fa fa-ellipsis-h"></i>
                       </span>
@@ -162,8 +207,21 @@
                   <a href="#" class="btn btn-default add-item-btn">Add a to-do</a>
                   <div class="well add-to-do">
                     <input type="text" placeholder="Add a new to-do..." class="form-control add-to-do-name" name="">
-                    <input type="text" placeholder="Assign to..." class="form-control" name="">
-                    <input type="text" placeholder="Add to the schedule..." class="form-control" name="">
+                    <input type="text" placeholder="Add to the schedule..." class="form-control add-schedules" name="">
+                    <div class="schedules">
+                      <div class="radio">
+                        <label><input type="radio" name="schedule"> No due date...</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="schedule"> Due on... </label>
+                        <input type="text" class="schedule-control" placeholder="Due date..." name="">  
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="schedule"> Runs from... </label>
+                        <input type="text" class="schedule-control" placeholder="Start date..." name=""> to 
+                        <input type="text" class="schedule-control" placeholder="End date..." name="">
+                      </div>                      
+                    </div>
                     <input type="text" placeholder="Add extra details or attach a file..." class="form-control add-to-do-extra" name="">
                     <textarea class="text-editor" ></textarea>
                     <div class="add-list-item-buttons">
@@ -184,7 +242,12 @@
                       <a href="#" class="text-muted" >Sub list 1</a>
                       <span class="label label-info"><i class="fa fa-star"></i> Recommended Vendors</span>
                       <span class="pull-right list-menu">
-                        <i class="fa fa-clock-o" data-toggle="tooltip" data-placement="top" title="10 Sep - 10 Oct" ></i>
+                        <span>
+                          <time datetime="2014-09-20" class="icon">
+                            <strong>Sep</strong>
+                            <span>20</span>
+                          </time>
+                        </span> 
                         <i class="fa fa-trash-o" onclick="confirm('Are you sure to delete this item?')"></i>
                         <i class="fa fa-ellipsis-h"></i>
                       </span>
@@ -194,7 +257,17 @@
                       <a href="#" class="text-muted" >Sub list 2</a>
                       <span class="label label-info"><i class="fa fa-star"></i> Recommended Vendors</span>                      
                       <span class="pull-right list-menu">
-                        <i class="fa fa-clock-o" data-toggle="tooltip" data-placement="top" title="10 Sep - 10 Oct" ></i>
+                        <span>
+                          <time datetime="2014-09-20" class="icon">
+                            <strong>Sep</strong>
+                            <span>20</span>
+                          </time>
+                          <big>-</big>
+                          <time datetime="2014-10-20" class="icon">
+                            <strong>Oct</strong>
+                            <span>20</span>
+                          </time>
+                        </span> 
                         <i class="fa fa-trash-o" onclick="confirm('Are you sure to delete this item?')"></i>
                         <i class="fa fa-ellipsis-h"></i>
                       </span>
@@ -204,7 +277,17 @@
                       <a href="#" class="text-muted" >Sub list 3</a>
                       <span class="label label-info"><i class="fa fa-star"></i> Recommended Vendors</span>
                       <span class="pull-right list-menu">
-                        <i class="fa fa-clock-o" data-toggle="tooltip" data-placement="top" title="10 Sep - 10 Oct" ></i>
+                        <span>
+                          <time datetime="2014-09-20" class="icon">
+                            <strong>Sep</strong>
+                            <span>20</span>
+                          </time>
+                          <big>-</big>
+                          <time datetime="2014-10-20" class="icon">
+                            <strong>Oct</strong>
+                            <span>20</span>
+                          </time>
+                        </span> 
                         <i class="fa fa-trash-o" onclick="confirm('Are you sure to delete this item?')"></i>
                         <i class="fa fa-ellipsis-h"></i>
                       </span>
@@ -213,7 +296,17 @@
                       <i class="fa fa-circle-o"></i>
                       <a href="#" class="text-muted" >Sub list 4</a>
                       <span class="pull-right list-menu">
-                        <i class="fa fa-clock-o" data-toggle="tooltip" data-placement="top" title="10 Sep - 10 Oct" ></i>
+                        <span>
+                          <time datetime="2014-09-20" class="icon">
+                            <strong>Sep</strong>
+                            <span>20</span>
+                          </time>
+                          <big>-</big>
+                          <time datetime="2014-10-20" class="icon">
+                            <strong>Oct</strong>
+                            <span>20</span>
+                          </time>
+                        </span> 
                         <i class="fa fa-trash-o" onclick="confirm('Are you sure to delete this item?')"></i>
                         <i class="fa fa-ellipsis-h"></i>
                       </span>
@@ -222,7 +315,6 @@
                       <i class="fa fa-circle-o"></i>
                       <a href="#" class="text-muted" >Sub list 5</a>
                       <span class="pull-right list-menu">
-                        <i class="fa fa-clock-o" data-toggle="tooltip" data-placement="top" title="10 Sep - 10 Oct" ></i>
                         <i class="fa fa-trash-o" onclick="confirm('Are you sure to delete this item?')"></i>
                         <i class="fa fa-ellipsis-h"></i>
                       </span>
@@ -233,8 +325,21 @@
                   <a href="#" class="btn btn-default add-item-btn">Add a to-do</a>
                   <div class="well add-to-do">
                     <input type="text" placeholder="Add a new to-do..." class="form-control add-to-do-name" name="">
-                    <input type="text" placeholder="Assign to..." class="form-control" name="">
-                    <input type="text" placeholder="Add to the schedule..." class="form-control" name="">
+                    <input type="text" placeholder="Add to the schedule..." class="form-control add-schedules" name="">
+                    <div class="schedules">
+                      <div class="radio">
+                        <label><input type="radio" name="schedule"> No due date...</label>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="schedule"> Due on... </label>
+                        <input type="text" class="schedule-control" placeholder="Due date..." name="">  
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="schedule"> Runs from... </label>
+                        <input type="text" class="schedule-control" placeholder="Start date..." name=""> to 
+                        <input type="text" class="schedule-control" placeholder="End date..." name="">
+                      </div>                      
+                    </div>
                     <input type="text" placeholder="Add extra details or attach a file..." class="form-control add-to-do-extra" name="">
                     <textarea class="text-editor" ></textarea>
                     <div class="add-list-item-buttons">
@@ -242,7 +347,7 @@
                       <a href="#" class="btn btn-primary">Add this to-do</a>
                       <a href="#" class="btn btn-default">Cancel</a>
                     </div>
-                  </div>                  
+                  </div>
                 </div>
 
               </div>
@@ -302,8 +407,6 @@
                   <a href="#" class="btn btn-default add-item-btn">Add a budget item</a>
                   <div class="well add-to-do">
                     <input type="text" placeholder="Add a new budget item..." class="form-control add-to-do-name" name="">
-                    <input type="text" placeholder="Assign to..." class="form-control" name="">
-                    <input type="text" placeholder="Add to the schedule..." class="form-control" name="">
                     <input type="text" placeholder="Add extra details or attach a file..." class="form-control add-to-do-extra" name="">
                     <textarea class="text-editor" ></textarea>
                     <div class="add-list-item-buttons">
@@ -367,8 +470,6 @@
                   <a href="#" class="btn btn-default add-item-btn">Add a budget item</a>
                   <div class="well add-to-do">
                     <input type="text" placeholder="Add a new budget item..." class="form-control add-to-do-name" name="">
-                    <input type="text" placeholder="Assign to..." class="form-control" name="">
-                    <input type="text" placeholder="Add to the schedule..." class="form-control" name="">
                     <input type="text" placeholder="Add extra details or attach a file..." class="form-control add-to-do-extra" name="">
                     <textarea class="text-editor" ></textarea>
                     <div class="add-list-item-buttons">

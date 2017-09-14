@@ -256,5 +256,12 @@ jQuery(function($) {
     	}
     });
 
+    $('.add-schedules').on('focus', function(event) {
+    	event.preventDefault();
+    	/* Act on the event */
+    	$(this).hide();
+    	$(this).parent().children('.schedules').slideDown();
+    });
+
 });
 
