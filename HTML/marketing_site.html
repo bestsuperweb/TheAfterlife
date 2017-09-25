@@ -13,131 +13,427 @@
   <link href="css/main.css" rel="stylesheet">
   <link id="css-preset" href="css/presets/preset1.css" rel="stylesheet">
   <link href="css/responsive.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker3.min.css">
+  
 
   <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
-  <![endif]-->
-  
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
-  <link rel="shortcut icon" href="images/favicon.png">
-  <script type="text/javascript" src="js/jquery.js"></script>
-  
-</head><!--/head-->
+    <![endif]-->
 
-<body class="home-body">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <script type="text/javascript" src="js/jquery.js"></script>    
 
-  <!--.preloader-->
-  <div class="preloader"> <i class="fa fa-circle-o-notch fa-spin"></i></div>
-  <!--/.preloader-->
+  </head><!--/head-->
 
-  <header id="home">
-    <div class="main-nav navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">
-            <h1><img class="img-responsive" src="images/logo-white.png" alt="logo"></h1>
-          </a>                    
+  <body>
+
+    <header id="home">
+      <div class="main-nav navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+              <h1><img class="img-responsive" src="images/logo-white.png" alt="logo"></h1>
+            </a>                    
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">                 
+              <li class="scroll active"><a href="#home">Home</a></li>
+              <li class="scroll"><a href="#services">Service</a></li> 
+              <li class="scroll"><a href="#about-us">About Us</a></li>                     
+              <li class="scroll"><a href="#testimonial">Testimonial</a></li>
+              <li class="scroll"><a href="#contact">Support</a></li>
+              <li class="scroll"><a href="#blog">Blog</a></li>
+              <li class="cscroll"><a href="login.html">Log In</a></li>
+              <li class="cscroll"><a href="signup.html">Join</a></li>       
+            </ul>
+          </div>
         </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">                 
-            <li class="scroll active"><a href="#home">Home</a></li>
-            <li class="scroll"><a href="#services">Service</a></li> 
-            <li class="scroll"><a href="#about-us">About Us</a></li>                     
-            <li class="scroll"><a href="#testimonial">Testimonial</a></li>
-            <li class="scroll"><a href="#contact">Support</a></li>
-            <li class="scroll"><a href="#blog">Blog</a></li>
-            <li class="cscroll"><a href="login.html">Log In</a></li>
-            <li class="cscroll"><a href="signup.html">Join</a></li>       
-          </ul>
+      </div><!--/#main-nav-->
+    </header>
+
+    <div id="home-slider" class="carousel slide carousel-fade vendor-banner" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="item active" style="background-image: url(images/marketing_banner.jpg)">
+          <div class="caption">
+            <h2 class="animated fadeInLeftBig">Welcome to The Afterlife</h2>
+            <p class="animated fadeInRightBig">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            </p>
+
+            <div class="animated fadeInUpBig">
+              <form class="navbar-form navbar-search vendor-search" role="search">
+                <div class="input-group"> 
+                  <input type="text" class="form-control first-category" placeholder="Service: Funeral Homes, Funeral Directors, Cemeteries, Florists, etc." >
+                  <input type="text" class="form-control second-category" placeholder="Near: Address, City or Zip Code">
+                  <div class="input-group-btn">
+                    <a class="btn btn-search btn-default" href="#">
+                      <span class="glyphicon glyphicon-search" style="vertical-align: bottom;"></span>
+                    </a>                      
+
+                  </div>
+                </div>  
+              </form>
+            </div>
+          </div>
         </div>
       </div>
-    </div><!--/#main-nav-->    
-  </header><!--/#home-->
 
+    </div>
 
-  <footer id="footer">
-    <div id="google-map" class="wow fadeIn" data-latitude="52.365629" data-longitude="4.871331" data-wow-duration="1000ms" data-wow-delay="400ms"></div>
-    <script type="text/javascript">
-        //Google Map
-        var latitude = $('#google-map').data('latitude')
-        var longitude = $('#google-map').data('longitude')
-        function initialize_map() {
-          var myLatlng = new google.maps.LatLng(latitude,longitude);
-          var mapOptions = {
-            zoom: 14,
-            scrollwheel: false,
-            center: myLatlng
-          };
-          var map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
-          var contentString = '';
-          var infowindow = new google.maps.InfoWindow({
-            content: '<div class="map-content"><ul class="address">' + $('.address').html() + '</ul></div>'
-          });
-          var marker = new google.maps.Marker({
-            position: myLatlng,
-            map: map
-          });
-          google.maps.event.addListener(marker, 'click', function() {
-            infowindow.open(map,marker);
-          });
-        }
-    </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpzIiiLq3H27dzsPhTCPIygSlfJolaj_w&callback=initialize_map" type="text/javascript"></script>
-    <div class="footer-top wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+    <section>
+      <div class="container">
+        <div class="col-sm-5" style="padding: 70px 0;">
+          <h2>Is Your Business Info Right?</h2>
+          <p>Your customers are only potential customers if they can’t find your business. Are your address, contact details, and hours correct? Make changes to your business page on Yelp in a snap.</p>
+        </div>
+        <div class="col-sm-7">
+          <div class="panel panel-default">
+            <div class="panel-heading"><b>Business Information</b></div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-sm-6" style="padding: 35px;">
+                  <h3><b>My Business</b></h3>
+                  <ul class="address">
+                    <li><i class="fa fa-map-marker"></i> <span> Address:</span> 2400 South Avenue A </li>
+                    <li><i class="fa fa-phone"></i> <span> Phone:</span> +0123 456 789  </li>
+                    <li><i class="fa fa-envelope"></i> <span> Email:</span><a href="mailto:someone@yoursite.com"> support@theafterlife.com</a></li>
+                    <li><i class="fa fa-globe"></i> <span> Website:</span> <a href="#">www.theafterlife.com</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-6">
+                    <div id="google-map" data-latitude="52.365629" data-longitude="4.871331" style="height: 250px; margin-bottom: 0;" class="well" ></div>
+                    <script type="text/javascript">
+                      //Google Map
+                      var latitude = $('#google-map').data('latitude')
+                      var longitude = $('#google-map').data('longitude')
+                      function initialize_map() {
+                        var myLatlng = new google.maps.LatLng(latitude,longitude);
+                        var mapOptions = {
+                          zoom: 14,
+                          scrollwheel: false,
+                          styles: [
+                                    {
+                                      "elementType": "geometry",
+                                      "stylers": [
+                                        {
+                                          "color": "#f5f5f5"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "elementType": "labels.icon",
+                                      "stylers": [
+                                        {
+                                          "visibility": "off"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "elementType": "labels.text.fill",
+                                      "stylers": [
+                                        {
+                                          "color": "#616161"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "elementType": "labels.text.stroke",
+                                      "stylers": [
+                                        {
+                                          "color": "#f5f5f5"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "featureType": "administrative.land_parcel",
+                                      "elementType": "labels.text.fill",
+                                      "stylers": [
+                                        {
+                                          "color": "#bdbdbd"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "featureType": "poi",
+                                      "elementType": "geometry",
+                                      "stylers": [
+                                        {
+                                          "color": "#eeeeee"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "featureType": "poi",
+                                      "elementType": "labels.text.fill",
+                                      "stylers": [
+                                        {
+                                          "color": "#757575"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "featureType": "poi.park",
+                                      "elementType": "geometry",
+                                      "stylers": [
+                                        {
+                                          "color": "#e5e5e5"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "featureType": "poi.park",
+                                      "elementType": "labels.text.fill",
+                                      "stylers": [
+                                        {
+                                          "color": "#9e9e9e"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "featureType": "road",
+                                      "elementType": "geometry",
+                                      "stylers": [
+                                        {
+                                          "color": "#ffffff"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "featureType": "road.arterial",
+                                      "elementType": "labels.text.fill",
+                                      "stylers": [
+                                        {
+                                          "color": "#757575"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "featureType": "road.highway",
+                                      "elementType": "geometry",
+                                      "stylers": [
+                                        {
+                                          "color": "#dadada"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "featureType": "road.highway",
+                                      "elementType": "labels.text.fill",
+                                      "stylers": [
+                                        {
+                                          "color": "#616161"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "featureType": "road.local",
+                                      "elementType": "labels.text.fill",
+                                      "stylers": [
+                                        {
+                                          "color": "#9e9e9e"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "featureType": "transit.line",
+                                      "elementType": "geometry",
+                                      "stylers": [
+                                        {
+                                          "color": "#e5e5e5"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "featureType": "transit.station",
+                                      "elementType": "geometry",
+                                      "stylers": [
+                                        {
+                                          "color": "#eeeeee"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "featureType": "water",
+                                      "elementType": "geometry",
+                                      "stylers": [
+                                        {
+                                          "color": "#c9c9c9"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "featureType": "water",
+                                      "elementType": "labels.text.fill",
+                                      "stylers": [
+                                        {
+                                          "color": "#9e9e9e"
+                                        }
+                                      ]
+                                    }
+                                  ],
+                          center: myLatlng
+                        };
+                        var map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
+                        var contentString = '';
+                        var infowindow = new google.maps.InfoWindow({
+                          content: '<div class="map-content"><ul class="address">' + $('.address').html() + '</ul></div>'
+                        });
+                        var marker = new google.maps.Marker({
+                          position: myLatlng,
+                          map: map
+                        });
+                        google.maps.event.addListener(marker, 'click', function() {
+                          infowindow.open(map,marker);
+                        });
+                      }
+                    </script>
+                    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpzIiiLq3H27dzsPhTCPIygSlfJolaj_w&callback=initialize_map" type="text/javascript"></script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="col-sm-7">
+          <div class="well" style="width: 80%;">
+            <div class="text-center" style="border-radius: inherit; border: 2px dashed gray; padding: 60px 20px;">
+              <strong class="text-muted" style="font-size: 25px;">Drag & Drop Your Photos Here</strong>
+              <hr>
+              <a href="#" class="btn btn-primary">Browse Files</a>
+            </div>
+          </div>
+          <img src="images/drag_photo.jpg" class="img-rounded" width="200" style="position: absolute; right: 20px; bottom: -10px;">
+        </div>
+        <div class="col-sm-5">
+          <h2>Put Your Best Face Forward</h2>
+          <p>Customers don’t pick addresses — they pick places. Make yours shine by adding up-to-date photos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="col-sm-5">
+          <h2>Reach Your Customers</h2>
+          <p>It's your stroy - maek sure your voice is heard.<br> Respond to reviews and control how your commuity sees your business here.</p>
+        </div>
+        <div class="col-sm-7">
+          <div class="panel panel-default">
+            <div class="panel-heading"><b>Reviews</b></div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="media">
+                    <div class="media-left">
+                      <img src="images/avatar2.png" class="media-object" width="60px;" style="border-radius: 4px;">
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading label-info" style="width: 60%;">&nbsp;</h4>
+                      <h5 class="label-default" style="font-size: 10px;" >&nbsp;</h5>
+                      <h5 class="label-default" style="font-size: 10px;" >&nbsp;</h5>
+                    </div>
+                  </div>
+                  <h5 class="label-default" style="font-size: 10px;" >&nbsp;</h5>
+                </div>
+                <div class="col-sm-8">
+                  <span class="label label-warning"><i class="fa fa-star"></i></span>
+                  <span class="label label-warning"><i class="fa fa-star"></i></span>
+                  <span class="label label-warning"><i class="fa fa-star"></i></span>
+                  <span class="label label-warning"><i class="fa fa-star"></i></span>
+                  <span class="label label-warning"><i class="fa fa-star"></i></span>
+                  <span class="label-default" style="font-size: 10px; padding: 0 10%;">
+                    &nbsp;
+                  </span>
+                  <p style="margin-top: 10px; line-height: 20px;">
+                    "We'll definitely return to Blooming Flowers for Irene's gorgeous corsages for our next formal occasion, and future floral needs."
+                  </p>
+                </div>
+              </div>              
+              <div class="well" style="height: 100px;"></div>
+              <span class="btn btn-primary" style="padding: 3px 30px; margin-top: -10px;">&middot;&middot;&middot;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="marketing_stand" class="parallax">
       <div class="container text-center">
-        <div class="footer-logo wow fadeIn">
-          <a href="index.html"><img class="img-responsive" src="images/logo-white.png" alt=""></a>
-        </div>
-        <div class="footer-about wow slideInRightBig">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-        </div>
-        <div class="footer-navigation wow slideInLeftBig">
-          <a href="#">About Us</a> |
-          <a href="#">Contact Us</a> |
-          <a href="#">Supports</a> |
-          <a href="#">Services</a>
-        </div>
-        <div class="social-icons wow slideInUp">
-          <ul>
-            <li><a class="envelope" href="#"><i class="fa fa-envelope"></i></a></li>
-            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li> 
-            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-            <li><a class="tumblr" href="#"><i class="fa fa-tumblr-square"></i></a></li>
-          </ul>
+        <h2>Stand Out, Claim Your Free Page.</h2>
+        <p>Get out in front of the crowd and start talking directly to your customers.<br>Sign up online and unlock the benefits today.</p>
+        <a href="#" class="btn btn-primary">Find Your Business</a>
+      </div>
+    </section>
+
+
+
+
+    <footer id="footer">
+      
+      <div class="footer-top wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+        <div class="container text-center">
+          <div class="footer-logo wow fadeIn">
+            <a href="index.html"><img class="img-responsive" src="images/logo-white.png" alt=""></a>
+          </div>
+          <div class="footer-about wow slideInRightBig">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          </div>
+          <div class="footer-navigation wow slideInLeftBig">
+            <a href="#">About Us</a> |
+            <a href="#">Contact Us</a> |
+            <a href="#">Supports</a> |
+            <a href="#">Services</a>
+          </div>
+          <div class="social-icons wow slideInUp">
+            <ul>
+              <li><a class="envelope" href="#"><i class="fa fa-envelope"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li> 
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a class="tumblr" href="#"><i class="fa fa-tumblr-square"></i></a></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <p>&copy; 2017 The Afterlife.</p>
-          </div>
-          <div class="col-sm-6">
-            <p class="pull-right">Designed by <a href="http://www.themeum.com/">Steve</a></p>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <p>&copy; 2017 The Afterlife.</p>
+            </div>
+            <div class="col-sm-6">
+              <p class="pull-right">Designed by <a href="http://www.themeum.com/">Steve</a></p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/jquery.inview.min.js"></script>
-  <script type="text/javascript" src="js/wow.min.js"></script>
-  <script type="text/javascript" src="js/mousescroll.js"></script>
-  <script type="text/javascript" src="js/smoothscroll.js"></script>
-  <script type="text/javascript" src="js/jquery.countTo.js"></script>
-  <script type="text/javascript" src="js/jquery.flexslider.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
 
-</body>
-</html>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.inview.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/mousescroll.js"></script>
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
+    <script type="text/javascript" src="js/jquery.countTo.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider.js"></script> 
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="https://cf-4053.kxcdn.com/conversational-form/0.9.5/conversational-form.min.js" crossorigin></script>
+  </body>
+  </html>
