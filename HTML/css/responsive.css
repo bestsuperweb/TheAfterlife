@@ -234,7 +234,7 @@
 		width:100%;
 		float: none;
 	}
-
+	/*marketing site*/
 	.drag-drop-file{
 	  width: 100%;
 	}
@@ -245,6 +245,7 @@
 	.business-address{
 	  padding: 0 15px 30px;
 	}
+	/*----*/
 }
 
 @media only screen and ( min-width:600px) and ( max-width:767px ){
