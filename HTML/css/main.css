@@ -1778,6 +1778,46 @@ time.icon span{
 #marketing_stand{
   background-image: url('../images/marketing_stand.jpg');
 }
-
+.business-txt{
+  padding: 5% 3%;
+}
+.business-address{
+  padding: 35px;
+}
+.drag-drop-file{
+  width: 80%;
+}
+.drag-drop-file .text-muted{
+  font-size: 25px;
+}
+.drag-drop-file>.text-center{
+  border-radius: inherit; 
+  border: 2px dashed gray; 
+  padding: 60px 20px;
+}
+.drag-drop-file>.img-rounded{
+  width: 30%;
+  position: absolute; 
+  right: 20px; 
+  bottom: -10px;
+}
+.review-panel img.media-object{
+  width:60px;
+  border-radius: 4px;
+}
+.review-panel .label-default{
+  font-size: 10px;
+}
+.review-panel p{
+  margin-top: 10px; 
+  line-height: 20px;
+}
+.review-panel .well{
+  height: 100px;
+}
+.review-panel .btn.btn-primary{
+  padding: 3px 30px; 
+  margin-top: -10px;
+}
 /* marketing-site ---*/
 

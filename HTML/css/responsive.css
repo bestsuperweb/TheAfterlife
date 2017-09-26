@@ -234,6 +234,17 @@
 		width:100%;
 		float: none;
 	}
+
+	.drag-drop-file{
+	  width: 100%;
+	}
+	.drag-drop-file .text-muted{
+	  font-size: 20px;
+	}
+
+	.business-address{
+	  padding: 0 15px 30px;
+	}
 }
 
 @media only screen and ( min-width:600px) and ( max-width:767px ){
