@@ -222,6 +222,12 @@
 		width: 50% !important;
 	}
 
+	/* marketing site */
+	.marketing_site section:after{
+		border: none;
+	}
+	/* ---- */
+
 }
 
 /* XS Portrait */

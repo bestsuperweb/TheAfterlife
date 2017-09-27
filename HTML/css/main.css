@@ -1819,5 +1819,18 @@ time.icon span{
   padding: 3px 30px; 
   margin-top: -10px;
 }
+.marketing_site section{
+  position: relative;
+}
+.marketing_site section:after{
+  content:"";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  border-left: 1px dashed rgba(0,0,0,.1);
+  transform: translate(-50%);
+}
 /* marketing-site ---*/
 
